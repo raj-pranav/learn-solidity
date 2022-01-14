@@ -1,3 +1,5 @@
+# Solidity Cheatsheet - to get started quickly
+
 ## Choosing a `License` Identifier
 `Note` - The Solidity compiler encourages the use of machine-readable `SPDX license identifiers`. Every source file should start with a comment indicating its license type:<br>
 **a few examples**<br>
