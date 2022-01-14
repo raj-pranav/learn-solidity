@@ -1,6 +1,6 @@
 ## Choosing a `License` Identifier
 `Note` - The Solidity compiler encourages the use of machine-readable `SPDX license identifiers`. Every source file should start with a comment indicating its license:<br>
-**example**<br>
+**examples**<br>
 // SPDX license identifiers: `GPL-3.0` <br>
 // SPDX license identifiers: `MIT` <br>
 // SPDX license identifiers: `UNLICENSED` <br>
