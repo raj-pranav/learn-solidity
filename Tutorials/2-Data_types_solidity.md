@@ -23,6 +23,11 @@
   - ...... > _and so on, with multiple of 8 and the last value is_
   - uint256 (or `uint`) : value range (0 to 4294967295)
 
+### String
+- [x] string is similar to bytes but are used for for arbitrary-length string `(UTF-8)` data
+- [x] Declared using single quote `' '` or double quotes `" "` 
+`Note` : string does not allow  length or index access
+
 ### Address (a 20 byte value) - for Ethereum
 - [x] address : size - 20 byte
   - Ether cannot be sent to this address
@@ -43,6 +48,7 @@
   - bytes32 : holds thirty-two bytes only (this is maximum size of fixed type byte array)
 
 Associated member: `length` - returns the length of byte array
+`Note`: Bytes are used for arbitrary-length raw byte data 
 
 ## Reference type - call by reference
 
@@ -53,6 +59,9 @@ Associated member: `length` - returns the length of byte array
   - Defined as >> arrayName[ ]
 
 ### Struct
-
+- [x] Struct is user defined datatype that can contain multiple data types
+- [x] It can be defined inside a contract or outside a contract -> struct defined outside the contract can be shared with various other contracts
 
 ### Mapping
+- [x] Maps a key-value pair.
+- [x] Analogous to hash tables
