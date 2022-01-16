@@ -1,5 +1,8 @@
-# State Variable in Solidity
+<img src="/Tutorials/header-images/3-OG-state_variable_solidity.png" width="630" title="Data Type in solidity">
 
+I am available @ [GitHub](https://github.com/raj-pranav/learn-solidity/) | [Twitter](https://twitter.com/PranavRaj90)
+
+# State Variable in Solidity
 **State variables** can be thought of like a class variable in Python (or other languages). These variables are directly stored on the blockchain and have a fixed [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/2-Data_types_solidity.md). Since these variable(s) are stored on the blockchain, therefore it cost some `gas` which needs to be paid by the contract creator during the deployment state.
 
 ## Key Highlights of a State variable
