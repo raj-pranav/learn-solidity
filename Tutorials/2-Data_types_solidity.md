@@ -1,3 +1,6 @@
+
+<img src="/Tutorials/header-images/2-OG-data_type_solidity.png" width="630" title="Data Type in solidity">
+
 # Data Types in Solidity
 **Solidity** is `statically typed` language, which means data type of any/all variables has to be define during the declaration time itself. If not defined, the compiler throws an error. Based on the data type defined, the compiler reserves a memory for that variable. Data type in popularly called as `value type` in solidity. Every [state variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/3-state_variable_solidity.md) or local variable in solidity have to declared with a specific data types.
 
