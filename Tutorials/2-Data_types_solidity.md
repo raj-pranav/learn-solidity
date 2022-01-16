@@ -81,5 +81,5 @@ In this category, data types are passes by reference, which means, whenever an i
 - [x] Analogous to hash tables
 
 
-I am available at [GitHub](https://github.com/raj-pranav/learn-solidity/) | [Twitter](https://twitter.com/PranavRaj90)
+I am available @ [GitHub](https://github.com/raj-pranav/learn-solidity/) | [Twitter](https://twitter.com/PranavRaj90)
 
