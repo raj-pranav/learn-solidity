@@ -1,6 +1,9 @@
 
 <img src="/Tutorials/header-images/2-OG-data_type_solidity.png" width="630" title="Data Type in solidity">
 
+[<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PranavRaj90?style=social">](https://twitter.com/intent/follow?screen_name=PranavRaj90)
+[<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
+
 # Data Types in Solidity
 **Solidity** is `statically typed` language, which means data type of any/all variables has to be define during the declaration time itself. If not defined, the compiler throws an error. Based on the data type defined, the compiler reserves a memory for that variable. Data type in popularly called as `value type` in solidity. Every [state variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/3-state_variable_solidity.md) or local variable in solidity have to declared with a specific data types.
 
@@ -81,5 +84,4 @@ In this category, data types are passes by reference, which means, whenever an i
 - [x] Analogous to hash tables
 
 
-I am available @ [GitHub](https://github.com/raj-pranav/learn-solidity/) | [Twitter](https://twitter.com/PranavRaj90)
 
