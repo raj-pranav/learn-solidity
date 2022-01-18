@@ -40,6 +40,7 @@ We can create a smart contract for crowd funding, aims at collecting money from 
 A vending Machine's main task is to automate the product delivery kisok without any service person. It contains certain items labelled with price. You have to select the item and pay the amount - the machine will dispense the product for you straightway. The same process can also be written as a Smart Contract that allows the process the transactions based on certain guideline.
 
 # Code Sample
+This is how a smart contract written in solidity looks like.
 _[source](https://ethereum.org/en/developers/docs/smart-contracts/#a-digital-vending-machine)_
 #### Automated Vending Machine
 
@@ -93,3 +94,9 @@ contract VendingMachine {
 - [FreecodeCamp YouTube -Ft. Gragory from Dapp University] (https://youtu.be/ipwxYa-F1uY)
 - [Freecodecamp YouTube -Ft. Patrick Collins] (https://youtu.be/M576WGiDBdQ)
 - [GitHub - Pranav Raj] (https://github.com/raj-pranav/learn-solidity)
+
+
+# Other Tutorials : Learn Solidity
+- [What is Solidity] (https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/1-What_is_Solidity.md)
+- [Data Types in Solidity] (https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/2-Data_types_solidity.md)
+- [State Variable in Solidity] (https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/3-State_variable_solidity.md)
