@@ -40,3 +40,9 @@ Step 3: Deploy the Bytecode & ABI, on a Target blockchain (Real - Mainnet/Testne
 - [x] Dapps : Decentralized applications
 - [x] DeFi : Decentralized finance
 - [x] Tokens : To share, exchange, stake 
+
+# Article: Learn Solidity Series
+- [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/1-What_is_Solidity.md)
+- [Data Types in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/2-Data_types_solidity.md)
+- [State Variable in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/3-State_variable_solidity.md)
+- [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/4-what-is-a-Smart_contract.md)
