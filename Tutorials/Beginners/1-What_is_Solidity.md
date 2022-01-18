@@ -15,7 +15,7 @@ You can use solidity to write smart contracts (which is simply a code written in
 - [x] Object oriented : supports inheritance
 - [x] Statically typed : Data type has to be assigned during the declaration
 - [x] Curly-bracket language - similiar to JavaScript, TypeScript etc..
-- [x] Supports Native [Data types](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/2-Data_types_solidity.md) as well complex user defined data types
+- [x] Supports Native [Data types](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) as well complex user defined data types
 
 # Integrated Development Environment (IDE) for Solidity
 - [x] Remix : Official online IDE
