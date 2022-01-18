@@ -96,7 +96,8 @@ contract VendingMachine {
 - [GitHub - Pranav Raj](https://github.com/raj-pranav/learn-solidity)
 
 
-# Learn Solidity Series
+# Article: Learn Solidity Series
 - [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/1-What_is_Solidity.md)
 - [Data Types in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/2-Data_types_solidity.md)
 - [State Variable in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/3-State_variable_solidity.md)
+- [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/4-what-is-a-Smart_contract.md)
