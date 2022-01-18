@@ -22,6 +22,18 @@ contract xyz {
 }
 
 ```
+<br>
+A few more examples of contant state variable type are
+
+**Blockchain Data**
+
+- block.timestamp
+- aadress(this).balance
+- block.number
+- msg.value
+
+<br>
+
   - In case of `immutable` , the value is not assigned at the time of declaration but they are initialized using constructor. The constructor are called during the compilation stage. Let's see how to declare an immutable state variable in solidity
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -37,6 +49,8 @@ contract xyz {
 
 ```
 `Note` : The gas cost for *constant* and *immutable* state variables are always much lesser than the normal state variable because the expression assigned to it is copied all over the places where it is called and re-evaluated each time. They also have fixed size (32 bytes) reserved in the EVM, irrespective of actual size required by the state variable.
+
+<br>
 
   - `mutable` is also known as regular state variable. This can be declared and initialized at the same time `or` declared and initialized using constructor `or` declared and the value can be changed using a setter function (or simply a function). Mutable state variable can be declared as follow,
 
