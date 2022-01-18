@@ -31,6 +31,11 @@ cheatsheet-hints : for quick reference, revision and readout
 
 ```
 
+## Shareable code in Gist
+
+[GitHub Gist - Learn Solidity](https://gist.github.com/raj-pranav/a4642949b9f6df7f08d931f4f77a727b)
+
+
 # Article in Learn Solidity Series (Beginners)
 - [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/1-What_is_Solidity.md)
 - [Data Types in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md)
@@ -38,12 +43,6 @@ cheatsheet-hints : for quick reference, revision and readout
 - [What is Smart Contract](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/4-what-is-a-Smart_contract.md)
 
 
-
-
-# Learn-solidity
-Examples to get started with Solidity programming language 
-
-[Gist Link](https://gist.github.com/raj-pranav/a4642949b9f6df7f08d931f4f77a727b)
 
 
 
