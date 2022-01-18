@@ -15,7 +15,7 @@
 * Using `constant` type state variable in solidity
 ```solidity
 // SPDX-License-Identifier: MIT
-pargma solidity >0.5.0 <=0.9.0;
+pargma solidity >0.5.0 <=0.8.0;
 
 contract xyz {
   uint constant myVal = 27; // state variable (myVal) has been assigned with 27
@@ -25,7 +25,7 @@ contract xyz {
   - In case of `immutable` , the value is not assigned at the time of declaration but they are initialized using constructor. The constructor are called during the compilation stage. Let's see how to declare an immutable state variable in solidity
 ```solidity
 // SPDX-License-Identifier: MIT
-pargma solidity >0.5.0 <=0.9.0;
+pargma solidity >0.5.0 <=0.8.0;
 
 contract xyz {
   uint public immutable myScore; // state variable myScore is not assigned with any value
@@ -42,7 +42,7 @@ contract xyz {
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pargma solidity >0.5.0 <=0.9.0;
+pargma solidity >0.5.0 <=0.8.0;
 
 contract xyz {
   uint16 public myHeight = 184; // state variable 'myHeight' is declared and assigned a value
