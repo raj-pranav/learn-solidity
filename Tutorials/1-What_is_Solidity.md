@@ -18,7 +18,7 @@ You can use solidity to write smart contracts (which is simply a code written in
 - [x] Supports Native [Data types](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/2-Data_types_solidity.md) as well complex user defined data types
 
 # Integrated Development Environment (IDE) for Solidity
-- [x] [Remix](https://remix.ethereum.org/) : Official online IDE
+- [x] Remix : Official online IDE
 - [x] Brownie : Python based dev framework 
 - [x] Truffle : Ethereum development framework based on JavaScript
 - [x] Hardhat : Ethereum development environment with local Ethereum network
