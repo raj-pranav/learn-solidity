@@ -6,6 +6,8 @@
 # State Variable in Solidity
 **State variables** can be thought of like a class variable in Python (or other languages). These variables are directly stored on the blockchain and have a fixed [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/2-Data_types_solidity.md). Since these variable(s) are stored on the blockchain, therefore it cost some `gas` which needs to be paid by the contract creator during the deployment state.
 
+**Visibility** for a state variable **CAN NOT** be `external`
+
 ## Key Highlights of a State variable
 - [x] Permanently Stored on the blockchain and cost `money` (specifically **gas**), as it requires some space on the EVM
 - [x] You can change the visibility of a State variable to `public` or `internal`, bydefault it is *private*  -> public state variable can be accesses from other contracts
