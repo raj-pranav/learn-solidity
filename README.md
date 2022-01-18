@@ -47,4 +47,4 @@ Examples to get started with Solidity programming language
 
 
 
-`Disclaimer` : There might be some mistake(s) in the document, be it typo or something else. Afterall , I am a human and bound to make mistake (ofcourse unintentionally). Please forgive me for that and do *raise an issue* via proper available templates if you encounter any of them.
+`Disclaimer` : There might be some mistake(s) in the document, be it typo or something else. Afterall , I am a human and bound to make mistake (ofcourse unintentionally). Please forgive me for that and do *raise an issue* via proper [available templates](https://github.com/raj-pranav/learn-solidity/tree/main/.github/ISSUE_TEMPLATE) if you encounter any of them.
