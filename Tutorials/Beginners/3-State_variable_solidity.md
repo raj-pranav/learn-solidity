@@ -4,7 +4,7 @@
 [<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
 
 # State Variable in Solidity
-**State variables** can be thought of like a class variable in Python (or other languages). These variables are directly stored on the blockchain and have a fixed [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/2-Data_types_solidity.md). Since these variable(s) are stored on the blockchain, therefore it cost some `gas` which needs to be paid by the contract creator during the deployment state.
+**State variables** can be thought of like a class variable in Python (or other languages). These variables are directly stored on the blockchain and have a fixed [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md). Since these variable(s) are stored on the blockchain, therefore it cost some `gas` which needs to be paid by the contract creator during the deployment state.
 
 **Visibility** for a state variable **CAN NOT** be `external`
 
