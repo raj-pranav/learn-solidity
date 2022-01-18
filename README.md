@@ -32,10 +32,10 @@ cheatsheet-hints : for quick reference, revision and readout
 ```
 
 # Learn Solidity Series
-- [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/1-What_is_Solidity.md)
-- [Data Types in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/2-Data_types_solidity.md)
-- [State Variable in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/3-State_variable_solidity.md)
-- [What is Smart Contract](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/4-what-is-a-Smart_contract.md)
+- [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/1-What_is_Solidity.md)
+- [Data Types in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md)
+- [State Variable in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md)
+- [What is Smart Contract](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/4-what-is-a-Smart_contract.md)
 
 
 
