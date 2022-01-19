@@ -33,9 +33,11 @@ Offline version (installable) of Remix IDE is also available for the use and you
 # Remix UI walkaround
 This is the `default` (theme may vary based on your mode preference) web-app view for online Remix IDE.
 
-<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/Remix_UI.PNG" width="640" title="Data Type in solidity">
+<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/Remix_UI.PNG" width="640" title="Remix web-app UI">
 
+## Sidebar
 
+<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/sidebar_Remix.PNG" width="320" title="Remix sidebar">
 
 # Working with online Remix IDE
 
