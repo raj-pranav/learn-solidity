@@ -31,6 +31,10 @@ You can directly access online IDE from https://remix.ethereum.org/ , without th
 Offline version (installable) of Remix IDE is also available for the use and you can always get the latest release for all major OS type from [HERE](https://github.com/ethereum/remix-desktop/releases)
 
 # Remix UI walkaround
+This is the `default` (theme may vary based on your mode preference) web-app view for online Remix IDE.
+
+<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/Remix_UI.PNG" width="640" title="Data Type in solidity">
+
 
 
 # Working with online Remix IDE
