@@ -32,9 +32,10 @@ code_snippets : Snapshot of various code, handy reference
 contracts : Various smart contracts written in solidity
  |
 LICENSE
+ |
 README
+ |
 cheatsheet-hints : for quick reference, revision and readout
-
 
 ```
 
