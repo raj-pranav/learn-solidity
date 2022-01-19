@@ -3,15 +3,32 @@
 [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PranavRaj90?style=social">](https://twitter.com/intent/follow?screen_name=PranavRaj90)
 [<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
 
-DRAFT - completing by 21 Jan, 2022 [IST: GMT+5:30]
+
+`FunFact`: Remix doesn't mean to mixing/modifiying a song only, It is also an IDE to write [smart contract](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/4-what-is-a-Smart_contract.md) on Ethereum (Ethereum based blockchain) :smiley:
 
 # What is an IDE & why it exists ?
+`IDE` stands for **I**ntegrated **D**evelopment **E**nvironemnt. Any IDE is basically a collection of tools to write, test, and debug a code. An IDE can be generic (supports many programming language) or it can be specific.
+Even without using an IDE, you could write the code and test it _BUT_ here are few advantages that comes along with an IDE
+- You get a Text editor (code editor) to write your program : Integrated in the same environment
+- A debugger : to save your from nightmares of what's breaking your code
+- A compiler : Inherited from OS or inbuilt sometime : to provide you the machine code
 
+a few examples : `VS Code`, `Jupyter Lab`, `PyCharm`, `Remix`, `Anaconda` .. and many others
+
+I hope you got an !dea of an IDE.
 
 # Remix IDE
+- Remix is a powerful open source IDE that allows you to write smart contracts in [Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) programming langauge.
+- Remix is used for smart contract development as well as acts as a playground for learning and teaching Ethereum.
+- Remix IDE has modules for testing, debugging and deploying of smart contracts and much more.
+
+Remix IDE is available both online (as a web-app in the browser) as well as offilne (standard installation for all major OS)
+
 ## Online Remix IDE
+You can directly access online IDE from https://remix.ethereum.org/ , without the need of login. This Web-app version is most popular and widely used Remix IDE. In the subsequent sections, you will learn various components of online version of Remix and get started with it.
 
 ## Offline Remix IDE
+Offline version (installable) of Remix IDE is also available for the use and you can always get the latest release for all major OS type from [HERE](https://github.com/ethereum/remix-desktop/releases)
 
 # Remix UI walkaround
 
