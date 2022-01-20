@@ -80,7 +80,7 @@ A more expanded view for all these three icons is collated in a single image as 
 
 
 
-# Learn Solidity Series for Beginners
+# Learn Solidity series - for Beginners
 - [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/1-What_is_Solidity.md)
 - [Data Types in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md)
 - [State Variable in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md)
