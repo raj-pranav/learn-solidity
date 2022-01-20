@@ -45,6 +45,10 @@ There are three major categories of items
 
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/sidebar_Remix.PNG" width="320" title="Remix sidebar">
 
+Expanded view of all Three buttons
+
+<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/expanded_view_all_three_Remix.png" width="640" title="expaned view sidebar">
+
 ## 2. Featured Plugin
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/featured_plugin_Remix.PNG" width="640" title="Remix Feature plugin">
 
