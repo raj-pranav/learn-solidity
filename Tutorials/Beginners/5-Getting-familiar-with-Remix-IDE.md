@@ -76,7 +76,6 @@ A more expanded view for all these three icons is collated in a single image as 
 
 ## Deploying Smart Contract
 
-# Others options - for Itermediate & Advance user
 
 
 
