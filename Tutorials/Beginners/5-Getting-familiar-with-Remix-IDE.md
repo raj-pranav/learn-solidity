@@ -42,12 +42,24 @@ There are three major categories of items
 
 
 ## 1. Sidebar
+The sidebar may contains several icons but predominantly I will have `first three`, which are
+- `File explorer` : Browse, locate, arrange, create files and folders
+- `Compile`       : To compile a smart contract
+- `Deploy`        : Deploy smart contract on simulated, testnet or mainnet blockchains
 
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/sidebar_Remix.PNG" width="320" title="Remix sidebar">
 
-Expanded view of all Three buttons
+A more expanded view for all these three icons is collated in a single image as shown in the image (appearing in the next section)
+### Expanded view of all Three buttons
+#### File Explorer
+
 
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/expanded_view_all_three_Remix.png" width="640" title="expaned view sidebar">
+
+#### Solidity Compiler
+
+#### Deploy & Run
+
 
 ## 2. Featured Plugin
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/featured_plugin_Remix.PNG" width="640" title="Remix Feature plugin">
