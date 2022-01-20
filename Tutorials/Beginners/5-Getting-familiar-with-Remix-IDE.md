@@ -33,11 +33,24 @@ Offline version (installable) of Remix IDE is also available for the use and you
 # Remix UI walkaround
 This is the `default` (theme may vary based on your mode preference) web-app view for online Remix IDE.
 
-<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/Remix_UI.PNG" width="640" title="Remix web-app UI">
+<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/Remix_UI_v2.PNG" width="640" title="Remix web-app UI">
 
-## Sidebar
+There are three major categories of items
+1. Remix Sidebar
+2. Featured Plugins
+3. File & Resources
+
+
+## 1. Sidebar
 
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/sidebar_Remix.PNG" width="320" title="Remix sidebar">
+
+## 2. Featured Plugin
+<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/featured_plugin_Remix.PNG" width="640" title="Remix Feature plugin">
+
+## 3. File & Resources
+
+<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/file_resources_Remix.PNG" width="380" title="Remix File & resources">
 
 # Working with online Remix IDE
 
