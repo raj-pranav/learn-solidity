@@ -25,7 +25,7 @@ I hope you got an !dea of an IDE.
 Remix IDE is available both online (as a web-app in the browser) as well as offilne (standard installation for all major OS)
 
 ## Online Remix IDE
-You can directly access online IDE from https://remix.ethereum.org/ , without the need of login. This Web-app version is most popular and widely used Remix IDE. In the subsequent sections, you will learn various components of online version of Remix and get started with it.
+You can directly access online IDE from https://remix.ethereum.org/ , without the need to login. This Web-app version is most popular and widely used Remix IDE. In the subsequent sections, you will learn various components of online version of Remix and get started with it.
 
 ## Offline Remix IDE
 Offline version (installable) of Remix IDE is also available for the use and you can always get the latest release for all major OS type from [HERE](https://github.com/ethereum/remix-desktop/releases)
@@ -42,14 +42,15 @@ There are three major categories of items
 
 
 ## 1. Sidebar
-The sidebar may contains several icons but predominantly I will have `first three`, which are
+The sidebar usually contains several icons but predominantly it has `first three` of them, which are
 - `File explorer` : Browse, locate, arrange, create files and folders
-- `Compile`       : To compile a smart contract
-- `Deploy`        : Deploy smart contract on simulated, testnet or mainnet blockchains
+- `Compile`       : To compile a smart contract & generate the necessary files
+- `Deploy`        : Deploy smart contract on either a simulated or testnet , or a mainnet blockchain
 
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/sidebar_Remix.PNG" width="320" title="Remix sidebar">
 
-A more expanded view for all these three icons is collated in a single image as shown in the image (appearing in the next section)
+Remaining icons that you see in the above image are manually installed using the featured plugin section. At any point of time , you can remove them or add a few more icon based on your requirement. The expanded view for all these three icons is collated at one place as shown in the image (appearing in the next section).
+
 ### Expanded view of all Three buttons
 #### File Explorer
 
