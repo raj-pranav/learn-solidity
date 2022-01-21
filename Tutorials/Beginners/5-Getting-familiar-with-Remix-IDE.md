@@ -55,6 +55,8 @@ Remaining icons that you see in the above image are manually installed using the
 
 #### File Explorer
 
+As the name suggest, it helps you organize your files and folder in the workspace. `Workspace` is just an organized area having your default files and setting saved. You can create multiple workspace and organize your content in varied way in each of them. From the image shown below, it is pretty obvious that you can create a _file, folder, push all these code on_ `Github Gist` and you can load file(s) from your `local system`. It also allows you to delete a file or folder or even workspace.
+
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/expanded_file_explorer_Remix.PNG" width="320" title="expaned view sidebar">
 
 #### Solidity Compiler
