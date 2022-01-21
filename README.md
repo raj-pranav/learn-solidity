@@ -17,27 +17,7 @@ This space is a beginners friendly and you can expect resources for intermediate
 
 `Contributors` are always welcome !!
 
-## Structure of this Repository - for a better walkthrough
 
-```
-Learn Solidity : Name of Repository
-Tutorials
- |  header-images : place to keep all images used in the Article
- |  Beginners
- |    |-- List of all the topics: As a separate markdown file (identifiable using name)
- |  Intermediates
- |    |-- List of Intermediate level tutorials
-code_snippets : Snapshot of various code, handy reference
- |
-contracts : Various smart contracts written in solidity
- |
-LICENSE
- |
-README
- |
-cheatsheet-hints : for quick reference, revision and readout
-
-```
 
 ## Shareable code in Gist
 
