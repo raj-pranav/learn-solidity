@@ -49,17 +49,21 @@ The sidebar usually contains several icons but predominantly it has `first three
 
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/sidebar_Remix.PNG" width="320" title="Remix sidebar">
 
-Remaining icons that you see in the above image are manually installed using the featured plugin section. At any point of time , you can remove them or add a few more icon based on your requirement. The expanded view for all these three icons is collated at one place as shown in the image (appearing in the next section).
+Remaining icons that you see in the above image are manually installed using the [featured plugin](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/5-Getting-familiar-with-Remix-IDE.md#2-featured-plugin) section. At any point of time , you can remove them or add a few more icon based on your requirement. The expanded view for all these three icons is collated at one place as shown in the image (appearing in the next section).
 
 ### Expanded view of all Three buttons
+
 #### File Explorer
 
-
-<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/expanded_view_all_three_Remix.png" width="640" title="expaned view sidebar">
+<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/expanded_file_explorer_Remix.PNG" width="320" title="expaned view sidebar">
 
 #### Solidity Compiler
 
+<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/solidity-compiler_Remix.PNG" width="320" title="expaned view compiler">
+
 #### Deploy & Run
+
+<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/deploy-%26-run_Remix.PNG" width="320" title="expaned view deploy & run">
 
 
 ## 2. Featured Plugin
