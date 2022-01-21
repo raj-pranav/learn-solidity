@@ -61,9 +61,26 @@ As the name suggest, it helps you organize your files and folder in the workspac
 
 #### Solidity Compiler
 
+The 2nd tab is `Solidity Compiler`, it basically provide you with various option to be set for code compitaion such as c`ompiler version`, `language`, `EVM type/version`, and a few more fucntions. Normally, you don't have to choose the version of solidity compiler manually, as it would be picked from the code itself in the [pragma line](https://github.com/raj-pranav/learn-solidity/blob/main/cheatsheet-hints.md#choosing-solidity-compiler-version) and correct version gets automatically selected.
+```solidity
+pragma solidity ^x.y.z;
+```
+Let the language be selected as `Solidity` and EVM compiler version `compiler default` would be best fit for beginners (untill and unless you want a specific version). 
+
+`Auto Compile` feature helps you to automatically keeps on comiling everytime you make any changes to your code (either add or delete). You can choose not to autocompile every time by simply unchecking the corresponding box. I prefer to keep it `ON`, as it acts like a helper and put me confident of my work BUT sometime I prefer to keep it `OFF`. You can decide your own. You can enable optimization, if you are sure about the number of times an opcode would be called during the entire lifetime of the smart contract (don't worry - if you did not understand .. it is an advance topic).
+After all the settings in place - You can hit `compile 'name_of_project.sol'`. It would compile and generate two files, which are required during the deployment.
+- ABI
+- Bytecode
+
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/solidity-compiler_Remix.PNG" width="320" title="expaned view compiler">
 
 #### Deploy & Run
+
+This section helps you to deploy the Smart Contract on a blockchain. `Environment` is the first option; it ask you to choose the target where you want to deploy the smart contract and upon clicking the dropdown you would see the following option.
+- JavaScript VM (London) : 
+- JavaScript VM (Berlin) :
+- Injected Web3  :
+- Web3 Providers :
 
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/deploy-%26-run_Remix.PNG" width="320" title="expaned view deploy & run">
 
