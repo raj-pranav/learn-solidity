@@ -3,6 +3,27 @@
 [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PranavRaj90?style=social">](https://twitter.com/intent/follow?screen_name=PranavRaj90)
 [<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
 
+> DRAFT
+
+# Native currency of Ethereum
+
+# Expressing currencies
+
+## WEI
+
+## GWEI
+
+## ETHER
+
+# Time Units
+
+# Globally accessible variable/functions
+
+## Special Global Variables
+
+## Special Global Functions
+
+
 
 # Learn Solidity series - for Beginners 👇
 - [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/1-What_is_Solidity.md)
