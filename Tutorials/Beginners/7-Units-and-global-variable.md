@@ -69,15 +69,42 @@ uint totalHours = totalDays * 24 hours;
 uint totalSeconds = totalHours * 60 seconds;
 ```
 
-`Note`: All time units are always expressed with ` s ` at the end (a plural form), such as second**s**, minute**s**
+`Note`: All time units are always expressed with ` s ` at the end (a plural form), such as second**s**, minute**s** etc..
 
 # Globally accessible variable/functions
+There are certain predefined variables and function specific to the blockchain, which can be accessed anytime in a program. They always exist and are globally accessible, mainly to provide information about the blockchain. Let's see some of global variables and function in two separate section below
 
 ## Special Global Variables
+These variables can be consumed in the solidity code without any explicit declaration.
+
+| Variable            |    Data Type    |  Description                                               |
+|---------------------|-----------------|------------------------------------------------------------|
+|  block.basefee      |       uint      | current block’s base fee                                   |
+|  block.chainid      |       uint      | Chain id of current blockchain                             |
+|  block.coinbase     | address payable | current block miner’s address                              |
+|  block.difficulty   |      uint       | current block difficulty                                   |
+|  block.gaslimit     |       uint      | current block gaslimit                                     |
+|  block.number       |       uint      | current block number                                       |
+|  block.timestamp    |       uint      | current block timestamp as seconds since unix epoch        |
+|  msg.data           | bytes calldata  | complete calldata                                          |
+|  msg.sender         |      address    | sender of the message (for current call)                   |
+|  msg.sig            |      bytes4     | first four bytes of the calldata (i.e function identifier) |
+|  msg.value          |       uint      | number of wei sent with the message                        |
+|  tx.gasprice        |       uint      | gas price of the transaction                               |
+|  tx.origin          |      address    | sender of the transaction (full call chain)                |
+
+
 
 ## Special Global Functions
+These function can also be called directly without any explicit declaration
+
+| Function                                      |  Description                                                                                    |
+|-----------------------------------------------|-------------------------------------------------------------------------------------------------|
+| blockhash(uint blockNumber) returns (bytes32) | hash of the given block, if blocknumber is within 256 most recent block, otherwise returns zero |
+| gasleft() returns (uint)                      | remaining gas                                                                                   |
 
 
+                                                          < -----  EOF ------ >
 
 # Learn Solidity series - for Beginners 👇
 - [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/1-What_is_Solidity.md)
