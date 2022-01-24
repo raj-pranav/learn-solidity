@@ -6,7 +6,7 @@
 In this section, you will learn all those units (either time or money) that are used while writing code and/or sending money to other accounts.
 
 # Native currency of Ethereum
-Ethereum blockchain has a native crytocurrency called "ETHER" (aka 'ETH'). All transactions happen in `ether`. Ether is the second largest crypocurrency by market capitalization, `Bitcoin` being the number one. Miners are also rewarded using Ether. Currently, there is no hard cap on the maximum supply limit of Ether.
+Ethereum blockchain has a native cryptocurrency called "ETHER" (aka 'ETH'). All transactions happen in `ether`. Ether is the second largest crypocurrency by market capitalization, `Bitcoin` being the number one. Miners are also rewarded using Ether. Currently, there is no hard cap on the maximum supply limit of Ether.
 
 # Expressing currency in various units
 Although Ether is the native currency for the Ethereum blockchain still, it is not the lowest denomination, which means it also also possible to send `< 1 ETH`. Let's look at various units of currency on the Ethereum blockchain. Cost of performing any operation or transaction fees is normally termed as `GAS`.
