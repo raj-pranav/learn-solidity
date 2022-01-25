@@ -35,7 +35,7 @@
 
 ## Bitwise AND : `&`
 ## Bitwise OR  : `|`
-## Bitwise exclusive OR : `^`
+## Bitwise exclusive OR (XOR) : `^`
 ## Bitwise NOT (negation): `~`
 
 
