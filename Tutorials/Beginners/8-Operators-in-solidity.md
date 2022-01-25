@@ -135,7 +135,7 @@ bool test10 = !b;  // test10 will be false
 ```
 
 # Comparison Operator
-**Applicable on `integer` type operands**
+**Applicable on `integer` type operands** and result will be `boolean`
 
 ## Less than : `<`
 
@@ -164,17 +164,18 @@ bool test10 = !b;  // test10 will be false
 
 ## Shift Left : `<<`
 
+
 # Assignment Operator
 
 ## Equals Operator : `=`
 
-## Increment & assign : `+=`
 
-## Decrement & assign : `-=`
+# Special : Increment & Decrement Operators
+Although, this is part of `Arithmetic Operators` as it is applied on integers and also outputs an integer, but still I am keeping it separate (just for simplicity)
 
+## Increment Operator (++)
 
-
-# Check for `*=` and `/=`
+## Decrement Operator (--)
 
 
 
