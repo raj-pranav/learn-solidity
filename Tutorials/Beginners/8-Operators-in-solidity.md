@@ -8,14 +8,18 @@
 # Operators in Solidity
 Operators in any programming language provide symbols to perform various mathematical operations.Each operator has it's symbol and it always performs a specific operation. Like any other programming language, solidity also supports all the standard operators (except a few like _Floor divison_ `//`).
 
+![image](https://user-images.githubusercontent.com/48473708/151010420-327d7739-2258-4b30-b031-f1f1b92aeb5c.png)
+
+
 In general, an operator always act between two operands and output some value. As always, few exceptions are:<br>
 > _logical NOT_ `~` and _bitwise NOT_ `!` , requires only one operand.
 
-There are predominantly **Four** major categories of Opeartors, which are
+There are predominantly **Five** major categories of Opeartors, which are
 - Arithmetic Operator
 - Logical Operator
 - Comparison Operator
 - Bitwise Operator
+- Assignment Operator
 
 # Arithmetic Operator
 **Applicable on `integer` type operands**
@@ -69,6 +73,18 @@ There are predominantly **Four** major categories of Opeartors, which are
 ## Shift Right : `>>`
 
 ## Shift Left : `<<`
+
+# Assignment Operator
+
+## Equals Operator : `=`
+
+## Increment & assign : `+=`
+
+## Decrement & assign : `-=`
+
+
+
+# Check for `*=` and `/=`
 
 
 
