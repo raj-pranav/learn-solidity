@@ -10,7 +10,6 @@ Operators in any programming language provide symbols to perform various mathema
 
 ![image](https://user-images.githubusercontent.com/48473708/151010420-327d7739-2258-4b30-b031-f1f1b92aeb5c.png)
 
-
 In general, an operator always act between two operands and output some value. As always, few exceptions are:<br>
 > _logical NOT_ `~` and _bitwise NOT_ `!` , requires only one operand.
 
@@ -23,14 +22,36 @@ There are predominantly **Five** major categories of Opeartors, which are
 
 # Arithmetic Operator
 **Applicable on `integer` type operands**
+
+```solidity
+uint x = 10;
+uint y = 20;
+int z  = -5;
+```
+
 ## Addition: `+`
-
+To facilitate addition of two numbers (int/uint)
+```solidity
+x + y
+x + z
+```
 ## Subtraction : `-`
-
+To facilitate subtraction of two numbers (int/uint)
+```solidity
+x - y
+x - z 
+```
 ## Unary Subtraction (only for signed integer) : `-`
-
+Applicable on only one signed integer type : int
+```solidity
+- (z)
+```
 ## Multiplication: `*`
-
+To facilitate multiplication between two numbers (int/uint)
+```solidity
+x * y
+x * z 
+```
 ## Division : `/`
 
 ## Modulo (Modulus): `%`
