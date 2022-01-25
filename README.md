@@ -21,7 +21,7 @@ This space is a beginners friendly and you can expect resources for intermediate
 
 ## Shareable code in Gist
 
-[GitHub Gist - Learn Solidity](https://gist.github.com/raj-pranav/a4642949b9f6df7f08d931f4f77a727b)
+[GitHub Gist - Learn Solidity](https://gist.github.com/raj-pranav)
 
 
 # Learn Solidity series - for Beginners 👇
