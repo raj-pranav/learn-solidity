@@ -20,6 +20,8 @@ There are predominantly **Five** major categories of Opeartors, which are
 - Assignment Operator
 
 # Arithmetic Operator
+Get all codes (compiler ready) at one place [GitHub Gist - Arithmetic Operators](https://gist.github.com/raj-pranav/000be584c93771d2fccbced55de29313)
+
 **Applicable on `integer` type operands**<br>
 Let's consider variables x,y,p,q (declared below - having different data type)
 ```solidity
