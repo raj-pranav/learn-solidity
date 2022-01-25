@@ -76,13 +76,63 @@ uint exp_1 = x ** y;  // exp_1 = 100000000000000000000
 ```
 
 # Logical Operator
+
+Get all codes (compiler ready) at one place [GitHub Gist - Logical Operators](https://gist.github.com/raj-pranav/ef6eb6ab9628b6f6731257e72531d6b8)
+
 **Applicable on `Boolean` type operands**
+
+Let's consider the following variable (for simplicity we have used uint type only)
+
+```solidity
+uint x = 10;
+uint y = 20;
+
+bool a = x > y ; // a is false
+bool b = x < y;  // b is true
+```
+
 ## Logical AND : `&&`
 
+The result of logical AND will be true if both are true, otherwise false (even if any one of them is false)
+
+**Logical AND Truth Table**
+| Value1 | Value2 | Result |
+|--------|--------|--------|
+| True   | True   | True   |
+| True   | False  | False  |
+| False  | True   | False  |
+| False  | False  | False  |
+
+```solidity
+bool test1 = a && b;        // false && true -> false
+bool test2 = a && false;    // false && false -> false
+bool test3 = true && b;     // true && true -> true
+bool test4 = true && false; // true && false -> false
+```
 ## Logical OR  : `||`
+The result of logical OR will be true if either of them is true, otherwise false (if both are false)
 
+**Logical OR Truth Table**
+| Value1 | Value2 | Result |
+|--------|--------|--------|
+| True   | True   | True   |
+| True   | False  | True   |
+| False  | True   | True   |
+| False  | False  | False  |
+
+```solidity
+bool test5 = a || b;        // false && true -> true
+bool test6 = a || false;    // false && false -> false
+bool test7 = true || b;     // true && true -> true
+bool test8 = true ||false;  // true && false -> true
+```
 ## Logical NOT : `!`
+It changes the result to opposite: makes a true to false and vice versa
 
+```solidity
+bool test9 = !a;   // test9 will be true
+bool test10 = !b;  // test10 will be false
+```
 
 # Comparison Operator
 **Applicable on `integer` type operands**
