@@ -15,6 +15,7 @@
   - Both *constant* & *immutable* means a fixed value , YES you are right. Actually in solidity, you can provide a fixed value to a state variable with the help of assignment opeartor. In this case, you have assigned the value at the time of declaration itself.
 
 * Using `constant` type state variable in solidity
+
 ```solidity
 // SPDX-License-Identifier: MIT
 pargma solidity >0.5.0 <=0.8.0;
@@ -25,6 +26,19 @@ contract xyz {
 
 ```
 <br>
+
+* only `constant` type variable can be declared outside the contract
+
+```solidity
+// SPDX-License-Identifier: MIT
+pargma solidity >0.5.0 <=0.8.0;
+
+uint constant x = 20;
+int constant y = -10;
+
+```
+<br>
+
 A few more examples of contant state variable type are
 
 **Blockchain Data**
