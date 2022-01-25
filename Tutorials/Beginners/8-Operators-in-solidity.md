@@ -22,18 +22,19 @@ There are predominantly **Five** major categories of Opeartors, which are
 
 # Arithmetic Operator
 **Applicable on `integer` type operands**
-
+Let's consider variables x,y,p,q (declared below - having different data type)
 ```solidity
 uint x = 10;
 uint y = 20;
-int z  = -5;
+int p  = -5;
+int q  = 11;
 ```
 
 ## Addition: `+`
-To facilitate addition of two numbers (int/uint)
+To facilitate addition of two numbers (both uint `OR` both int)
 ```solidity
-x + y
-x + z
+uint sum = x + y;
+int sum1 = p + q;
 ```
 ## Subtraction : `-`
 To facilitate subtraction of two numbers (int/uint)
