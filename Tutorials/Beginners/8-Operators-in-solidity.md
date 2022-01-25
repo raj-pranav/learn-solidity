@@ -6,37 +6,70 @@
 > DRAFT
 
 # Operators in Solidity
+Operators in any programming language provide symbols to perform various mathematical operations.Each operator has it's symbol and it always performs a specific operation. Like any other programming language, solidity also supports all the standard operators (except a few like _Floor divison_ `//`).
+
+In general, an operator always act between two operands and output some value. As always, few exceptions are:<br>
+> _logical NOT_ `~` and _bitwise NOT_ `!` , requires only one operand.
+
+There are predominantly **Four** major categories of Opeartors, which are
+- Arithmetic Operator
+- Logical Operator
+- Comparison Operator
+- Bitwise Operator
 
 # Arithmetic Operator
 **Applicable on `integer` type operands**
 ## Addition: `+`
+
 ## Subtraction : `-`
+
 ## Multiplication: `*`
+
 ## Division : `/`
+
 ## Modulo (Modulus): `%`
+
 ## Exponential : ` ** `
 
 # Logical Operator
 **Applicable on `Boolean` type operands**
 ## Logical AND : `&&`
+
 ## Logical OR  : `||`
+
 ## Logical NOT : `!`
+
 
 # Comparison Operator
 **Applicable on `integer` type operands**
+
 ## Less than : `<`
+
 ## Less than or equal to : `<=`
+
 ## Greater than : `>`
+
 ## Greater than or equal to: `>=`
-## Is equal to : `==`
-## Not equal to : `!=`
+
+## Is equal to (equality) : `==`
+
+## Not equal to (inequality) : `!=`
 
 # Bit Operator (or Bitwise)
+**Applicable on `bit represented` type operands**
 
 ## Bitwise AND : `&`
+
 ## Bitwise OR  : `|`
+
 ## Bitwise exclusive OR (XOR) : `^`
+
 ## Bitwise NOT (negation): `~`
+
+## Shift Right : `>>`
+
+## Shift Left : `<<`
+
 
 
 # Learn Solidity series - for Beginners 👇
