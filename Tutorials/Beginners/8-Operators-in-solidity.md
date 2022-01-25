@@ -3,10 +3,9 @@
 [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PranavRaj90?style=social">](https://twitter.com/intent/follow?screen_name=PranavRaj90)
 [<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
 
-> DRAFT
 
 # Operators in Solidity
-Operators in any programming language provide symbols to perform various mathematical operations.Each operator has it's symbol and it always performs a specific operation.These operands should have a sepecific [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) and the operation on the given operands would result in error, if data type of both the operand as not THE same. Like any other programming language, solidity also supports all the standard operators (except a few like _Floor divison_ `//`).
+Operators in any programming language provide symbols to perform various mathematical operations.Each operator has it's symbol and it always performs a specific operation.These operands should have the same [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) otherwise, the operation on given operands would result in **error**; if data type of both the operand as not THE same. Like any other programming language, solidity also supports all the standard operators (except a few like _Floor divison_ `//`).
 
 ![image](https://user-images.githubusercontent.com/48473708/151010420-327d7739-2258-4b30-b031-f1f1b92aeb5c.png)
 
@@ -31,33 +30,48 @@ int q  = 11;
 ```
 
 ## Addition: `+`
-To facilitate addition of two numbers (both uint `OR` both int)
+To facilitate addition of two numbers (both operands should be either uint `OR` int)
 ```solidity
-uint sum = x + y;
-int sum1 = p + q;
+uint sum = x + y; // sum = 30
+int sum1 = p + q; // sum1 = 6
 ```
 ## Subtraction : `-`
-To facilitate subtraction of two numbers (int/uint)
+To facilitate subtraction of two numbers (both operands should be either uint `OR` int)
 ```solidity
-x - y
-x - z 
+uint sub1 = x - y;  // Error during compiling, as result would be of int type (-10)
+uint sub1 = y - x;  // sub1 = 10
+int sub2 = p - q;   // sub2 = -16
 ```
 ## Unary Subtraction (only for signed integer) : `-`
-Applicable on only one signed integer type : int
+Applicable only on signed integer type : int
 ```solidity
-- (z)
+int Un = - q;  // Un = -11
 ```
 ## Multiplication: `*`
-To facilitate multiplication between two numbers (int/uint)
+To facilitate multiplication between two numbers (both operands should be either uint `OR` int)
 ```solidity
-x * y
-x * z 
+uint mul_1 = x * y; // mul_1 = 200
+int mul_2 = p * q;   // mul_2 = -55
 ```
-## Division : `/`
+## Divison : `/`
+To facilitate divison between two numbers (both operands should be either uint `OR` int) and result is exactly as floor divison
+```solidity
+uint div_1 = x / y;      // div_1 = 0
+int div_2  = p / q;      // div_2 = 0
+uint div_3 = (x+1) / 4;  // div_3 = 2
+```
 
 ## Modulo (Modulus): `%`
-
+Modulo operation outputs the remainder (both operands should be either uint `OR` int)
+```solidity
+uint mod_1 = x % y;  // mod_1 = 10
+int mod_2  = p % q;  // mod_2 = -5
+```
 ## Exponential : ` ** `
+This is equivalent to raise to the power (or exponent): (both operands should be either uint `OR` int)
+```solidity
+uint exp_1 = x ** y;  // exp_1 = 100000000000000000000
+```
 
 # Logical Operator
 **Applicable on `Boolean` type operands**
