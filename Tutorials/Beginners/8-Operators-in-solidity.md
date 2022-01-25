@@ -27,6 +27,8 @@ There are predominantly **Five** major categories of Opeartors, which are
 
 ## Subtraction : `-`
 
+# Unary Subtraction (only for signed integer) : `-`
+
 ## Multiplication: `*`
 
 ## Division : `/`
