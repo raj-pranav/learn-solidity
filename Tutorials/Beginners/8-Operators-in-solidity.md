@@ -6,7 +6,7 @@
 > DRAFT
 
 # Operators in Solidity
-Operators in any programming language provide symbols to perform various mathematical operations.Each operator has it's symbol and it always performs a specific operation. Like any other programming language, solidity also supports all the standard operators (except a few like _Floor divison_ `//`).
+Operators in any programming language provide symbols to perform various mathematical operations.Each operator has it's symbol and it always performs a specific operation.These operands should have a sepecific [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) and the operation on the given operands would result in error, if data type of both the operand as not THE same. Like any other programming language, solidity also supports all the standard operators (except a few like _Floor divison_ `//`).
 
 ![image](https://user-images.githubusercontent.com/48473708/151010420-327d7739-2258-4b30-b031-f1f1b92aeb5c.png)
 
@@ -21,7 +21,7 @@ There are predominantly **Five** major categories of Opeartors, which are
 - Assignment Operator
 
 # Arithmetic Operator
-**Applicable on `integer` type operands**
+**Applicable on `integer` type operands**<br>
 Let's consider variables x,y,p,q (declared below - having different data type)
 ```solidity
 uint x = 10;
