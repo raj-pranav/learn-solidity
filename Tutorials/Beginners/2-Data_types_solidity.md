@@ -37,11 +37,15 @@ There are two categories of integers supported in solidity.
   - ...... > _and so on, with multiple of 8 and the last value is_
   - uint256 (or `uint`) : value range (0 to 4294967295)
 
+#### NOTE: There is no concept of `Float` or Floating point data type in solidity till version 0.8.11
+---
 ### String
 - [x] Use to store textual information such as name, place, data etc..
 - [x] string is similar to bytes but are used for for arbitrary-length string `(UTF-8)` data
 - [x] Declared using single quote `' '` or double quotes `" "` 
 `Note` : string does not allow  length or index access
+
+---
 
 ### Address (a 20 byte value) - for Ethereum
 There are two types of address type in solidity `address` and `address payable`
@@ -53,6 +57,8 @@ There are two types of address type in solidity `address` and `address payable`
   - Associated members: `transfer` and `send`
 
 `Note` - Conversion from `address payable` to `address` is *implicit* **BUT** from `address` to `address payable` has to be explicit using `payable(<address>)` 
+
+---
 
 ### Byte array (static)
 - [x] Fixed Size byte arrays
@@ -66,6 +72,8 @@ There are two types of address type in solidity `address` and `address payable`
 Associated member: `length` - returns the length of byte array
 `Note`: Bytes are used for arbitrary-length raw byte data 
 
+---
+
 ## Reference type - call by reference
 In this category, data types are passes by reference, which means, whenever an instance of the variable is called/initialized the data value get referenced to the original value; to that instance. The data is accessed using a location/index.
 
@@ -75,14 +83,19 @@ In this category, data types are passes by reference, which means, whenever an i
 - [x] Dynamic array (size is not required to be specified)
   - Defined as >> arrayName[ ]
 
+---
+
 ### Struct
 - [x] Struct is user defined datatype that can contain multiple data types
 - [x] It can be defined inside a contract or outside a contract -> struct defined outside the contract can be shared with various other contracts
+
+---
 
 ### Mapping
 - [x] Maps a key-value pair.
 - [x] Analogous to hash tables
 
+---
 
 # Article in Learn Solidity Series (Beginners)
 - [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/1-What_is_Solidity.md)
