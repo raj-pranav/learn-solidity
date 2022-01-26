@@ -196,7 +196,7 @@ bool res5 = x != y; // res5 = true
 ```
 
 # Bit Operator (or Bitwise)
-Get all codes (compiler ready) at one place [GitHub Gist - Bitwise Operators]()
+Get all codes (compiler ready) at one place [GitHub Gist - Bitwise Operators](https://gist.github.com/raj-pranav/ff36a69ba2598df5f0aa4ebee38287e0)
 
 **Applicable on `bit represented` type operands**
 In Solidity, we do not have concepts to represents bits directly, internally the compiler converts byte into bits, performs a given bitwise operation, and again shows the result in byte format. Learn more about various [Data Types](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) supported by solidity.
@@ -252,17 +252,64 @@ bytes1 byte_left_shift = x << 2;    // 00010110 << 2 -> 01011000 -> in byte (0x5
 
 
 # Assignment Operator
+You have already seen a number of times , in this section , that we have used `=`. This is an assignment operator. It simply assigns a value from right side of this symbol, to the variable name available in the left side (value in right side gets assigned to left side variable).
 
 ## Equals Operator : `=`
+```solidity
+uint x = 10 ;
+int y = -9 ;
+bytes1 p = 0x33 ;
+```
+
+## Add and Equate : `+=`
+
+```solidity
+
+
+```
+
+## Subtract and Equate : `-=`
+
+```solidity
+
+
+```
+## Multiply and Equate : `*=`
+
+```solidity
+
+
+```
+
+## Divide and Equate : `/=`
+
+```solidity
+
+
+```
 
 
 # Special : Increment & Decrement Operators
 Although, this is part of `Arithmetic Operators` as it is applied on integers and also outputs an integer, but still I am keeping it separate (just for simplicity)
 
+```solidity
+uint x = 10;
+uint y = 99;
+```
+`Note :` Please make sure that either increment or decrement operators will not able to modifies a value, which turns into another data type, for example <br>
+if uint x = 0 then `x--` will throws an error as it is trying to make x to -1 (which is no more an uint)
+
 ## Increment Operator (++)
+This operator acts on a single variable and increment the value by 1
+```solidity
+uint inc_y = y++ ;  // inc_y will be 100
+```
 
 ## Decrement Operator (--)
-
+This operator acts on a single variable and decerement the value by 1
+```solidity
+uint dec_x = x-- ;  // dec_x will be 9
+```
 
 
 # Learn Solidity series - for Beginners 👇
