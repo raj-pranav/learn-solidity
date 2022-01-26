@@ -18,6 +18,8 @@ There are predominantly **Five** major categories of Opeartors, which are
 - Comparison Operator
 - Bitwise Operator
 - Assignment Operator
+- Special Increment/Decrement operator
+- Ternary Operator
 
 # Arithmetic Operator
 Get all codes (compiler ready) at one place [GitHub Gist - Arithmetic Operators](https://gist.github.com/raj-pranav/000be584c93771d2fccbced55de29313)
