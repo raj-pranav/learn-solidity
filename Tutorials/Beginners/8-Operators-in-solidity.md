@@ -196,19 +196,59 @@ bool res5 = x != y; // res5 = true
 ```
 
 # Bit Operator (or Bitwise)
+Get all codes (compiler ready) at one place [GitHub Gist - Bitwise Operators]()
+
 **Applicable on `bit represented` type operands**
+In Solidity, we do not have concepts to represents bits directly, internally the compiler converts byte into bits, performs a given bitwise operation, and again shows the result in byte format. Learn more about various [Data Types](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) supported by solidity.
+
+For the demonstration, let's consider the following bytes variables
+```solidity
+bytes1 x = 0x16;    // bit representation: 00010110
+bytes1 y = 0x11;    // bit representation: 00010001
+```
+You can refer to online tool [RapidTables](https://www.rapidtables.com/convert/number/hex-to-binary.html) to convert bytes to bit and various other format
 
 ## Bitwise AND : `&`
+Bitwise '&' performs `AND` operation on each bit in order and returns a final output, which again then converted back to bytes and returned
+
+```solidity
+bytes1 byte_and = x & y;    // 00010110 & 00010001 -> 00010000 -> in byte (0x10)
+```
 
 ## Bitwise OR  : `|`
+Bitwise '|' performs `OR` operation on each bit in order and returns a final output, which again then converted back to bytes and returned
+
+```solidity
+bytes1 byte_or = x | y;    // 00010110 | 00010001 -> 00010111 -> in byte (0x17)
+```
 
 ## Bitwise exclusive OR (XOR) : `^`
+Bitwise '^' performs `XOR` (exclusive OR) operation on each bit in order and returns a final output, which again then converted back to bytes and returned. You can learn the basics of [XOR Operation](https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/a/xor-bitwise-operation).
+```solidity
+bytes1 byte_xor = x ^ y;    // 00010110 ^ 00010001 -> 00000111 -> in byte (0x07)
+```
 
 ## Bitwise NOT (negation): `~`
+Bitwise '~' requires only one operand (a byte) and it just flips every bit and returns the result.
+
+```solidity
+bytes1 byte_not_x = ~x;     // ~ 00010110 -> 11101001 -> in byte (0xE9)
+bytes1 byte_not_y = ~y;     // ~ 00010001 -> 11101110 -> in byte (0xEE)
+```
 
 ## Shift Right : `>>`
+This operation shift the bit towards right, based on the given right shifting value
+
+```solidity
+bytes1 byte_right_shift = x >> 2;   // 00010110 >> 2 -> 00000101 -> in byte (0x05)
+```
 
 ## Shift Left : `<<`
+This operation shift the bit towards left, based on the given left shifting value
+
+```solidity
+bytes1 byte_left_shift = x << 2;    // 00010110 << 2 -> 01011000 -> in byte (0x58)
+```
 
 
 # Assignment Operator
