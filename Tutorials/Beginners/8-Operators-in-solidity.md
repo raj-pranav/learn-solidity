@@ -323,13 +323,18 @@ It is a `conditional operator` type. It takes three operands, conditional statem
 > 'conditional expression' ? 'executed upon true' : 'executed upon false'
 
 ```solidity
-uint x = 5 ;
-uint y = 7 ;
+// SPDX-License-Identifier: MIT
 
-function ter_op(uint a, uint b) public pure returns(bool) {
-    return a >= b ? true : false ;
+pragma solidity ^0.8.0;
+contract Ternary_Op {
+
+    uint x = 5 ;
+    uint y = 7 ;
+
+    function ter_op(uint a, uint b) public pure returns(bool) {
+        return a >= b ? true : false ;
+    }
 }
-
 ```
 
 Till now, you may not have learnt about the function. You can head over to function section to learn more.
