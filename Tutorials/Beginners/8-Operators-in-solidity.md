@@ -13,13 +13,13 @@ In general, an operator always act between two operands and output some value. A
 > _logical NOT_ `~` and _bitwise NOT_ `!` , requires only one operand.
 
 There are predominantly **Five** major categories of Opeartors, which are
-- Arithmetic Operator
-- Logical Operator
-- Comparison Operator
-- Bitwise Operator
-- Assignment Operator
-- Special Increment/Decrement operator
-- Ternary Operator
+- [Arithmetic Operator](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/8-Operators-in-solidity.md#arithmetic-operator)
+- [Logical Operator](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/8-Operators-in-solidity.md#logical-operator)
+- [Comparison Operator](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/8-Operators-in-solidity.md#comparison-operator)
+- [Bitwise Operator](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/8-Operators-in-solidity.md#bit-operator-or-bitwise)
+- [Assignment Operator](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/8-Operators-in-solidity.md#assignment-operator)
+- [Special Increment/Decrement operator](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/8-Operators-in-solidity.md#special--increment--decrement-operators)
+- [Ternary Operator](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/8-Operators-in-solidity.md#ternary-operator---)
 
 # Arithmetic Operator
 Get all codes (compiler ready) at one place [GitHub Gist - Arithmetic Operators](https://gist.github.com/raj-pranav/000be584c93771d2fccbced55de29313)
