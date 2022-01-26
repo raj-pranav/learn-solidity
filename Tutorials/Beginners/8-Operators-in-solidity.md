@@ -257,35 +257,41 @@ You have already seen a number of times , in this section , that we have used `=
 ## Equals Operator : `=`
 ```solidity
 uint x = 10 ;
-int y = -9 ;
-bytes1 p = 0x33 ;
+uint y = 2 ;
 ```
 
 ## Add and Equate : `+=`
 
 ```solidity
-
+x += y ; // x = x + y
 
 ```
 
 ## Subtract and Equate : `-=`
 
 ```solidity
-
+x -= y ; // x = x - y
 
 ```
 ## Multiply and Equate : `*=`
 
 ```solidity
-
+x *= y ; // x = x * y
 
 ```
 
 ## Divide and Equate : `/=`
 
 ```solidity
+x /= y ; // x = x / y
+
+```
 
 
+## Modulo and Equate : `%=`
+
+```solidity
+x %= y ; // x = x % y
 ```
 
 
@@ -310,6 +316,24 @@ This operator acts on a single variable and decerement the value by 1
 ```solidity
 uint dec_x = x-- ;  // dec_x will be 9
 ```
+
+# Ternary Operator : ` ? : `
+It is a `conditional operator` type. It takes three operands, conditional statement at the first place followed by a question mark `?`, then the expression when evaluated true, followed by a colon `:`, and lastly the expression when evaluated false.
+
+> 'conditional expression' ? 'executed upon true' : 'executed upon false'
+
+```solidity
+uint x = 5 ;
+uint y = 7 ;
+
+function ter_op(uint a, uint b) public pure returns(bool) {
+    return a >= b ? true : false ;
+}
+
+```
+
+Till now, you may not have learnt about the function. You can head over to function section to learn more.
+
 
 
 # Learn Solidity series - for Beginners 👇
