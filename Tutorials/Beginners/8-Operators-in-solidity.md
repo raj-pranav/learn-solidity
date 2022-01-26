@@ -135,19 +135,65 @@ bool test10 = !b;  // test10 will be false
 ```
 
 # Comparison Operator
-**Applicable on `integer` type operands** and result will be `boolean`
+Get all codes (compiler ready) at one place [GitHub Gist - Comparison Operators](https://gist.github.com/raj-pranav/60184468833969964fae355dab9369b7)
 
+**Applicable on `integer` type operands** and result will be `boolean` ; both operands should be of same data type, either int or uint.
+
+Comparison operator compares the value of two integer operands and produce a boolean result (true/false). Let's declare a few variable to test all comparison operators.
+```solidity
+
+uint x = 10;
+uint y = 12;
+
+```
 ## Less than : `<`
+Checks whether, left side operand is less than the right side operand; returns true if correct otherwise false.
+```solidity
+bool res = x < y;   // res = true
 
+```
 ## Less than or equal to : `<=`
-
+Checks whether, left side operand is less than or atleast equal to the right side operand; returns true if correct otherwise false.
+```solidity
+bool res1 = x <= y;    // res1 = true
+bool s_res1 = x <= 10; // s_res1 = true
+```
 ## Greater than : `>`
+Checks whether, left side operand is greater than the right side operand; returns true if correct otherwise false.
+```solidity
+bool res2 = x > y;  // res2 = false
+
+```
 
 ## Greater than or equal to: `>=`
+Checks whether, left side operand is greater than or atleast equal to the right side operand; returns true if correct otherwise false.
+```solidity
+bool res3 = x >= y;    // res3 = false
+bool s_res3 = x >= 10; // s_res3 = true
+```
 
 ## Is equal to (equality) : `==`
+Also known as `Double equal to` and it is completely different from `=`. It compare both operands and return true if both the same, false otherwise.<br>
+`Note` : Data type of both the inetgers should be same (irrespective of the value). For example
+
+```solidity
+uint p = 10;
+int q = 10;
+bool p_q = p == q  // This expression will throw compilation error, as data types are different.
+```
+
+Taking our original declared variable,
+```solidity
+bool res4 = x == y; // res4 = false
+
+```
 
 ## Not equal to (inequality) : `!=`
+It compare both operands and return true if both the NOT equal, false otherwise
+```solidity
+bool res5 = x != y; // res5 = true
+
+```
 
 # Bit Operator (or Bitwise)
 **Applicable on `bit represented` type operands**
