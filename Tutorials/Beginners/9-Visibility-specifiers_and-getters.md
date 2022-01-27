@@ -4,7 +4,6 @@
 [<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
 
 
-> DRAFT
 
 # Visibility Specifier
 Visibility specifier defines the visibility (more precisely accessibility) scope for a function as well as a [state variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md). In other sense, it deals with which type of function can be called from within the same contract, or from other contracts, or can't be accessed by external contracts.
@@ -22,7 +21,7 @@ External function are normally not included in a smart contracts rather they are
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pargma solidity ^0.8.0;
+pragma solidity ^0.8.0;
 
 Interface Token {
   function sample_call() external returns (uint);
@@ -35,9 +34,9 @@ A state variable, by default, has Internal visibility unless it is explicitly de
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pargma solidity ^0.8.0;
+pragma solidity ^0.8.0;
 
-Interface Token {
+contract Token {
   uint total_supply = 10000000000 ; // even without specifying the visibility is internal
   function int_call(uint _Ts) internal returns (uint) {
     return _Ts;
@@ -45,32 +44,41 @@ Interface Token {
 ```
 
 ## Public
-A function or state variable with the visibility specified as Public, can be accessed by any other functions internally as well as other external contracts. An state variable with Public visibility automatically call a [getter function]().
+A function or state variable with the visibility specified as Public, can be accessed by any other functions internally as well as other external contracts. An state variable with Public visibility automatically calls a [getter function](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/9-Visibility-specifiers_and-getters.md#getter-function).
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pargma solidity ^0.8.0;
+pragma solidity ^0.8.0 ;
 
-Interface Token {
-  uint total_supply = 10000000000 ; // even without specifying the visibility is internal
-  function int_call(uint _Ts) internal returns (uint) {
+contract Token {
+  uint public total_supply = 10000000000 ; // can be accessed internally or via msg call
+  function int_call(uint _Ts) public returns (uint) {
     return _Ts;
+  }
 }
 ```
 
 ## Private
+A function or state variabel with the visibility as Private, is only accessible by the same contract and it can not be accessed by any one else , not even by the derived contracts. It is purely private to the contract where it is declared.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0 ;
+
+contract Token {
+  uint private total_supply = 10000000000 ; // can be accessed internally or via msg call
+  function int_call(uint _Ts) private returns (uint) {
+    return _Ts;
+  }
+}
+```
+<br><br>
 
 # Getter Function
 Solidity compiler automatically creates a getter function for every [state variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md) decalred as `Public`. A getter function helps you to read the state variable at any point of time. In Remix IDE, for every getter function a button is created automatically, as shown in the image below. Get the current value by clicking on that button.
 
 ```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity >0.6.0 <=0.8.0;
 
-contract G-func {
-  uint data = 20 ;              // No getter function for state variable data
-  uint public vis_data = 30 ;  // Automatically getter function created for vis_data
-}
 
 ```
 ![image](https://user-images.githubusercontent.com/48473708/151355352-15bf28a1-ca2d-48c8-bc67-61b81ac15362.png)
