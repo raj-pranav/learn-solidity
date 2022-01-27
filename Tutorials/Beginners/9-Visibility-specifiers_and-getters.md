@@ -6,15 +6,57 @@
 
 > DRAFT
 
-
-
 # Visibility Specifier
+Visibility specifier defines the visibility (more precisely accessibility) scope for a function as well as a [state variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md). In other sense, it deals with which type of function can be called from within the same contract, or from other contracts, or can't be accessed by external contracts.
+
+There are four type of visibility specifier is solidity,
+1. External
+2. Internal
+3. Public
+4. Private
+
+`Exception : `Only **external** visibility specifier is not applicable for a state variable, remaining three does.
 
 ## External
+External function are normally not included in a smart contracts rather they are exclusively designed to be placed in an `Interface`. Having present in an Interface, provide the benefit of getting it called (invoked) from other contract or even called via transactions. A function once specified as external, can not be called internally (only other contract, which inherits from, can call it).
 
-## Public
+```solidity
+// SPDX-License-Identifier: MIT
+pargma solidity ^0.8.0;
+
+Interface Token {
+  function sample_call() external returns (uint);
+}
+```
 
 ## Internal
+A function or state variable with Internal visibilty can only accessed internally (within the same contract) as well as it can also be accesses by other contracts which are derived from the current contract. While calling these function or state variable, the contract object does not need to referenced rather they can be called directly by the function name.<br><br>
+A state variable, by default, has Internal visibility unless it is explicitly defined as specific one (Public/Private).
+
+```solidity
+// SPDX-License-Identifier: MIT
+pargma solidity ^0.8.0;
+
+Interface Token {
+  uint total_supply = 10000000000 ; // even without specifying the visibility is internal
+  function int_call(uint _Ts) internal returns (uint) {
+    return _Ts;
+}
+```
+
+## Public
+A function or state variable with the visibility specified as Public, can be accessed by any other functions internally as well as other external contracts. An state variable with Public visibility automatically call a [getter function]().
+
+```solidity
+// SPDX-License-Identifier: MIT
+pargma solidity ^0.8.0;
+
+Interface Token {
+  uint total_supply = 10000000000 ; // even without specifying the visibility is internal
+  function int_call(uint _Ts) internal returns (uint) {
+    return _Ts;
+}
+```
 
 ## Private
 
