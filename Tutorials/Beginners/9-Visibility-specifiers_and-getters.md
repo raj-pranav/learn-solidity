@@ -6,7 +6,32 @@
 
 > DRAFT
 
+
+
 # Visibility Specifier
+
+## External
+
+## Public
+
+## Internal
+
+## Private
+
+# Getter Function
+Solidity compiler automatically creates a getter function for every [state variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md) decalred as `Public`. A getter function helps you to read the state variable at any point of time. In Remix IDE, for every getter function a button is created automatically, as shown in the image below. Get the current value by clicking on that button.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >0.6.0 <=0.8.0;
+
+contract G-func {
+  uint data = 20 ;              // No getter function for state variable data
+  uint public vis_data = 30 ;  // Automatically getter function created for vis_data
+}
+
+```
+![image](https://user-images.githubusercontent.com/48473708/151355352-15bf28a1-ca2d-48c8-bc67-61b81ac15362.png)
 
 
 
