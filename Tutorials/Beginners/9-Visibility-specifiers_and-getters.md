@@ -30,7 +30,7 @@ Interface Token {
 
 ## Internal
 A function or state variable with Internal visibilty can only accessed internally (within the same contract) as well as it can also be accesses by other contracts which are derived from the current contract. While calling these function or state variable, the contract object does not need to referenced rather they can be called directly by the function name.<br><br>
-A state variable, by default, has Internal visibility unless it is explicitly defined as specific one (Public/Private).
+A state variable, by default, has `Internal` visibility unless it is explicitly defined as specific one (Public/Private).
 
 ```solidity
 // SPDX-License-Identifier: MIT
