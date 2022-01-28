@@ -5,7 +5,26 @@
 
 > DRAFT
 
-# Functions
+# What is a Function ?
+
+
+## Function Parameters & Return variables
+
+# Create a function in Solidity
+
+# State Mutability of Function
+
+## View
+
+## Pure
+
+
+# Further topics related to function - covered in Intermediate/Advance section
+
+- Function Modifier
+- Function overloading
+- Internal & External Function call
+- Special Function (Receive Ether & Fallback)
 
 
 # Learn Solidity series - for Beginners 👇
