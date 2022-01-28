@@ -73,7 +73,9 @@ contract Token {
 }
 ```
 <br>
+
 `Note: ` The visibility specifier according to premissiveness order are: `Private` -> `Internal` -> `External` -> `Public` 
+
 <br>
 
 # Getter Function
