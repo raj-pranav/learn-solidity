@@ -3,7 +3,6 @@
 [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PranavRaj90?style=social">](https://twitter.com/intent/follow?screen_name=PranavRaj90)
 [<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
 
-> DRAFT
 
 # What is a Function ?
 Function is a small set of code (_one or several lines_) collectively placed together, which performs a specific task. It accepts certains input (although _not required always_) and produce an output. Even without defining functions, you can build programs by repeating the same collection of code again and again at every required place. This is where the role of function comes into play, you need to write the code at once, and call/use them wherever required. By incorporating functions in code, you are basically adhering to the principle of `DRY` - Donot Repeat Yourself.
@@ -108,6 +107,13 @@ contract Test {
 }
 ```
 
+# Find all the codes written in this Section at Gist
+All codes are compiler ready - It can directly be compiled without any errors and deployable further
+
+[Github Gist - Function in Solidity](https://gist.github.com/raj-pranav/fff69c99ff8fb1d6ae172aa86b13d077)
+
+---
+
 # Further topics related to function - covered in Intermediate/Advance section
 
 - Function Modifier
@@ -115,6 +121,7 @@ contract Test {
 - Internal & External Function call
 - Special Function (Receive Ether & Fallback)
 
+---
 
 # Learn Solidity series - for Beginners 👇
 1. [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/1-What_is_Solidity.md)
