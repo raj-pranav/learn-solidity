@@ -76,8 +76,18 @@ contract sample_pure {
 ```
 
 # Create a function in Solidity
+Creating a function in solidity might seems intimidating for the first time but, It is not so complicated though. Infact, after merely a week of practice, you will be used to it. There are few additional components to the solidity function as compared to function that exists in other high level language such as Python, JavaScript etc..
 
+I have created the below image to provide you a pictorial representation of a complete function including the individual components. Let break it down and understand each of them.
 
+![image](https://user-images.githubusercontent.com/48473708/151676356-db1e5a75-38f4-482f-9219-f20da21e9a97.png)
+
+- `function ` : This is a keyword to denote that this is a function. It is fixed
+- `fun_name ` : Stands for function name, you can name your function in any ways you want (except it should not start with a number, sign, space). It can start with an underscore '_'.
+- `parameters`: The input value that are passed to a function
+    - There can be no parameters or multiple parameters
+    - Each parameter must have a data typed specified
+    - 
 
 
 # Further topics related to function - covered in Intermediate/Advance section
