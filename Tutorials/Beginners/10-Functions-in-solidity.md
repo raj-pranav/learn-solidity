@@ -6,17 +6,30 @@
 > DRAFT
 
 # What is a Function ?
+Function is a small set of code (one or several lines) collectively placed together, which performs a specific task. It accepts certains input (although not required always) and produce an output. Even without defining functions, you can build programs by repeating the same collection of code again and again at every required place. This is where the role of function comes into play, you need to write the code at once, and call/use them wherever required. By incorporating functions in code, you are basically adhering to the principle of `DRY` - Do Not Repeat .
 
+Function is solidity also serves the same purpose, with few additional features such as visibility and Mutability. You can learn more about [Function Visibility Specifier](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/9-Visibility-specifiers_and-getters.md).
 
 ## Function Parameters & Return variables
+A function accepts certain arguments (in some case no argument) and return one or more output.<br>
+During function declaration, we specify the input parameter (variable name along with their respective [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md)) that will be passed as arguments as well as we also need to specify the return type of the function.
 
-# Create a function in Solidity
 
 # State Mutability of Function
 
+
+
 ## View
 
+
+
 ## Pure
+
+
+
+# Create a function in Solidity
+
+
 
 
 # Further topics related to function - covered in Intermediate/Advance section
