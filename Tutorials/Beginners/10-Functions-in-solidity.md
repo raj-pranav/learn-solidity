@@ -54,8 +54,26 @@ A function marked as `pure` means, it will neither change the state nor reads an
 
 You already know about various rules that can change the state of EVM (at any given block). Mentioned below are some read operations
 - Reading a state varible
-- Accessing anything related to addressing 
+- Accessing anything related to address - address.balance
+- Accessing any member of block, tx or msg (excpet msg.sig and msg.data): Learn more about [Global variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/7-Units-and-global-variable.md#globally-accessible-variablefunctions)
+- Calling any function which is not marked as _pure_
+- Using certain opcodes
 
+Shown below is an example of function labelled as 'pure' in solidity. This code checks for senior citizen based on the input age. It has nothing to do with reading or writing the state of EVM.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract sample_pure {
+    function sample_p (uint _age) public pure returns (bool) {
+        if (_age > 60) // to check senior citizen
+            return true;
+        else
+            return false;
+    }
+}
+```
 
 # Create a function in Solidity
 
