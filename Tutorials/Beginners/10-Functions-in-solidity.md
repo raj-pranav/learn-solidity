@@ -6,25 +6,55 @@
 > DRAFT
 
 # What is a Function ?
-Function is a small set of code (one or several lines) collectively placed together, which performs a specific task. It accepts certains input (although not required always) and produce an output. Even without defining functions, you can build programs by repeating the same collection of code again and again at every required place. This is where the role of function comes into play, you need to write the code at once, and call/use them wherever required. By incorporating functions in code, you are basically adhering to the principle of `DRY` - Do Not Repeat .
+Function is a small set of code (_one or several lines_) collectively placed together, which performs a specific task. It accepts certains input (although _not required always_) and produce an output. Even without defining functions, you can build programs by repeating the same collection of code again and again at every required place. This is where the role of function comes into play, you need to write the code at once, and call/use them wherever required. By incorporating functions in code, you are basically adhering to the principle of `DRY` - Donot Repeat Yourself.
 
 Function is solidity also serves the same purpose, with few additional features such as visibility and Mutability. You can learn more about [Function Visibility Specifier](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/9-Visibility-specifiers_and-getters.md).
 
 ## Function Parameters & Return variables
 A function accepts certain arguments (in some case no argument) and return one or more output.<br>
-During function declaration, we specify the input parameter (variable name along with their respective [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md)) that will be passed as arguments as well as we also need to specify the return type of the function.
+During function declaration, we specify the input parameter (variable name along with their respective [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md)), that will be passed as arguments.
+
+You will also to specify the return type of a function. Return type can be a variable alongwith value or it can simply be a value itself.
+
+`Note: ` Argument and Parameter may sounds confusing at first place but these two are different. A parameter(s) is basically used during functional declaration while an argument is passed during the fuctional call. In general, people refer the same at different places.
 
 
 # State Mutability of Function
+As you probaly know, Ethereum is a distributed state machine. Ethereum's state is a large database that holds all accounts and balances together with the machine state. At any given block, it has only one valid state. It links all account by hashes and is traceable back to root hash (modified Merkle Patricia Trie). The specific rules to change the state of machine, have been defined in the EVM.
 
+Now coming back to the state mutability, there are few rules listed in the EVM that can lead to change in state, which are
+- Writing/modifying a state varible
+- Emitting an Event
+- Creating other contracts
+- Destroying an existing contracts using 'selfdestruct'
+- Sending 'ETH' via calls
+- Calling any fuction NOT labelled as either `pure` or `view`
+- Using some low level call to EVM
 
 
 ## View
+A function can be declared as `view`, if there is no intension to modify the state of an EVM. In other word, view function promises not to change anything (from the above list) that can cause state change. A sample solidity code incorporating a view function is,
 
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
 
+contract sample {
+    uint s;
+
+    function f_name(uint _a) public view returns (uint) {
+        return _a + block.number;
+    }
+}
+```
+`Note :` The function f_name is just using the state varible 's' but not changing it, therefore view is applicable here
 
 ## Pure
+A function marked as `pure` means, it will neither change the state nor reads anything from the state. A pure fucntion is by heart very pure 🙂, it doesn't want to read/write anything but certainly retuns something (as per the code).
 
+You already know about various rules that can change the state of EVM (at any given block). Mentioned below are some read operations
+- Reading a state varible
+- Accessing anything related to addressing 
 
 
 # Create a function in Solidity
