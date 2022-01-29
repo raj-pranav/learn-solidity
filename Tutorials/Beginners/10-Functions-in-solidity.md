@@ -86,9 +86,27 @@ I have created the below image to provide you a pictorial representation of a co
 - `fun_name ` : Stands for function name, you can name your function in any ways you want (except it should not start with a number, sign, space). It can start with an underscore '_'.
 - `parameters`: The input value that are passed to a function
     - There can be no parameters or multiple parameters
-    - Each parameter must have a data typed specified
-    - 
+    - Each parameter must have a data typed associated with it
+    - Each parameter must be separated with comma `,`
+    - General practice it is put an `_` before the parameter name (not compulsory though)
+- `visibility` : The visibility of the function must be declared (It is mandatory). Learn more about [Function Visibility](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/9-Visibility-specifiers_and-getters.md)
+- `mutability` : This is an optional parameter and can be decided by the developer
+- `returns` : It is keyword to specifies that function is returning something. It can also be optional sometime, incase of internal function. It is `returns` and NOT return. It follows the data type of returned value (specified in bracket).
+- `{` : Function opening
+- `body of function ` : The body of loop can have any calculation or interpretation of data
+- `}` : Function closing (EOF - end of function)
 
+
+## Function can be written in a single line
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract Test {
+
+    function f(uint a) private pure returns (uint) { return a + 1; }
+}
+```
 
 # Further topics related to function - covered in Intermediate/Advance section
 
