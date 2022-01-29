@@ -68,7 +68,7 @@ contract xyz {
 
 <br>
 
-  - `mutable` is also known as regular state variable. This can be declared and initialized at the same time `or` declared and initialized using constructor `or` declared and the value can be changed using a setter function (or simply a function). Mutable state variable can be declared as follow,
+  - `mutable` is also known as regular state variable. This can be declared and initialized at the same time `or` declared and initialized using constructor `or` declared and the value can be changed using a setter function (or simply a [function](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/10-Functions-in-solidity.md)). Mutable state variable can be declared as follow,
 
 ```solidity
 // SPDX-License-Identifier: MIT
