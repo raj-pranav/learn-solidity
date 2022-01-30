@@ -17,7 +17,7 @@ There are four type of visibility specifier is solidity,
 `Exception : `Only **external** visibility specifier is not applicable for a state variable, remaining three does.
 
 ## External
-External function are normally not included in a smart contracts rather they are exclusively designed to be placed in an `Interface`. Having present in an Interface, provide the benefit of getting it called (invoked) from other contract or even called via transactions. A function once specified as external, can not be called internally (only other contract, which inherits from, can call it).
+External function are normally not included in a smart contracts (however, you are free to do so as solidity supports it) rather they are designed to be placed in an `Interface`. Having present in an Interface, provide the benefit of getting it called (invoked) from other contract or even called via transactions. A function once specified as external, can not be called internally (only other contract, which inherits from, can call it).
 
 ```solidity
 // SPDX-License-Identifier: MIT
