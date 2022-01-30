@@ -2,7 +2,7 @@
 
 [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PranavRaj90?style=social">](https://twitter.com/intent/follow?screen_name=PranavRaj90)
 [<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
-
+[<img align= "right" src="/Tutorials/Beginners/images-for-docs/home.png" width="30" title="Repo Home">](https://github.com/raj-pranav/learn-solidity)
 
 # What is a Function ?
 Function is a small set of code (_one or several lines_) collectively placed together, which performs a specific task. It accepts certains input (although _not required always_) and produce an output. Even without defining functions, you can build programs by repeating the same collection of code again and again at every required place. This is where the role of function comes into play, you need to write the code at once, and call/use them wherever required. By incorporating functions in code, you are basically adhering to the principle of `DRY` - Donot Repeat Yourself.
