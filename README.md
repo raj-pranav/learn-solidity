@@ -1,3 +1,5 @@
+<img src="/Tutorials/header-images/0-OG-%20Learn-solidity.png" width="630" title="Learn solidity">
+
 <h1 align="left"> Learn Solidity & build Smart Contracts </h1>
 
 [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PranavRaj90?style=social">](https://twitter.com/intent/follow?screen_name=PranavRaj90)
