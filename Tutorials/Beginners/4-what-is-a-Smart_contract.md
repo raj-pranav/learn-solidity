@@ -3,6 +3,7 @@
 
 [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PranavRaj90?style=social">](https://twitter.com/intent/follow?screen_name=PranavRaj90)
 [<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
+[<img align= "right" src="/Tutorials/Beginners/images-for-docs/home.png" width="30" title="Repo Home">](https://github.com/raj-pranav/learn-solidity)
 
 In year 1994, Nick Szabo, coined the term <b>Smart Contract</b> or *self executing contract* that deal with exchnage of money/asset between two unknown parties. Prior to the term *Smart contract*, it used to be normally called as **code** or *computer program*. The reason for calling this special code as smart contract is,
 - It runs on the blockchain (which is decentralized: powered by several node participating in a p2p network)
