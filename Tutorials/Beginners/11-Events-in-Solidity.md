@@ -59,7 +59,11 @@ contract Event_sample {
 # Relevance of Indexed item(s) in event
 
 
+---
+# Find all the codes written in this Section at Gist
+All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
+[Github Gist - Events in Solidity](https://gist.github.com/raj-pranav/1924e97cb5d8767be1279809f2c5479e)
 ---
 
 # Learn Solidity series - for Beginners 👇
