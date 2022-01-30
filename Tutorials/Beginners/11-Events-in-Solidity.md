@@ -8,7 +8,55 @@
 >DRAFT
 
 
-# Events
+# What is an Event ?
+Events are way to inform the external world (outside a blockchain) that something specific has happened along with the data value. The external applications (such as web-app or mobile app, or even desktop app) can subscribe to an event (or multiple events) and keep on listening them, whenever they occur. Events are the best to propagate message from blockchain to internet and `transaction log` stores the event data inside EVM. Further, the event data is not accessible from within the contracts. Transaction Logs are not part of the actual blockchain since they are not required for consensus.
+
+These logs are associated with the address of the contract, are incorporated into the blockchain, and stay there as long as a block is accessible 
+
+# How to create an event in solidity ?
+`Event : ` are struct type, so it can have any data type.<br>
+It is fairly straight forward to create event in solidity - using event keyword followed by a name (decided by user) and inside the body certain parameters, as shown in the code
+
+```solidity
+// SPDX-License-Identifier:MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract Event_sample {
+
+    event HighValueTx(    // creating an event
+      address _from,
+      address _to,
+      uint amount,
+      uint timeStamp  
+    );
+
+}
+```
+
+# Triggering an event (aka emit)
+
+```solidity
+// SPDX-License-Identifier:MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract Event_sample {
+    event HighValueTx(
+      address _from,
+      address _to,
+      uint amount,
+      uint timeStamp  
+    );
+
+    function DetectHighVal(uint amount, address _to) external {
+        if (amount > 100*10*18) { // 100 ETH -> this is represented in wei
+            emit HighValueTx(msg.sender, _to, amount, block.timestamp );  // emitting sn event
+            }
+    }
+
+}
+```
+
+# Relevance of Indexed item(s) in event
 
 
 
