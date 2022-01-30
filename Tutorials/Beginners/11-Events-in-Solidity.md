@@ -4,9 +4,7 @@
 [<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
 
 [<img align= "right" src="/Tutorials/Beginners/images-for-docs/home.png" width="30" title="Repo Home">](https://github.com/raj-pranav/learn-solidity)
-
->DRAFT
-
+<br>
 
 # What is an Event ?
 Events are way to inform the external world (outside a blockchain) that something specific has happened along with the data value. The external applications (such as web-app or mobile app, or even desktop app) can subscribe to an event (or multiple events) and keep on listening them, whenever they occur. Events are the best to propagate message from blockchain to internet and `transaction log` stores the event data inside EVM. Further, the event data is not accessible from within the contracts. Transaction Logs are not part of the actual blockchain since they are not required for consensus.
