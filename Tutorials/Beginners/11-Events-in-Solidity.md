@@ -55,7 +55,24 @@ contract Event_sample {
 ```
 
 # Relevance of Indexed item(s) in event
+An attribute called `indexed`can be placed in between the data type and parameter name of an event, as shown below,
 
+```solidity
+// SPDX-License-Identifier:MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract Event_sample {
+    event HighValueTx(
+      address indexed _from,    // _from parameter is indexed
+      address _to,
+      uint indexed amount,     // amount parameter is indexed
+      uint timeStamp  
+    );
+```
+
+When an `indexed` keyword is attached to a parameter, it is added to a special data structure called `topics` and the remaining parameters (without indexed) are stored in ABI-encoded data part of the log. The indexed type of parameters are easy to query using their names. Topics allow you to search for events, for example when filtering a sequence of blocks for certain events. You can also filter events by the address of the contract that emitted the event.
+
+There is a maximum limit on indexing the number of parameters, which is `3`. You can apply indexed attributes to a maximum of three parameters.
 
 ---
 
