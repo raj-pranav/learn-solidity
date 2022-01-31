@@ -1,4 +1,4 @@
-<img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/header-images/0-OG-%20Learn-solidity.png" width="630" title="Learn solidity">
+<img src="/Tutorials/header-images/0-OG-Learn-solidity.png" width="630" title="Learn solidity">
 
 <h1 align="left"> Learn Solidity & build Smart Contracts </h1>
 
