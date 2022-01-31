@@ -18,7 +18,7 @@ This space is a beginners friendly and you can expect resources for intermediate
 
 <br>
 
-`Contributors` are always welcome !!
+`CONTRIBUTORS` are always welcome !!
 
 
 
