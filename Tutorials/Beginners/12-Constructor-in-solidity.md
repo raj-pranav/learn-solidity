@@ -6,7 +6,6 @@
 [<img align= "right" src="/Tutorials/Beginners/images-for-docs/home.png" width="30" title="Learn Solidity - Home">](https://github.com/raj-pranav/learn-solidity)
 <br>
 
-> DRAFT
 
 # What is Constructor
 A constructor is an optional function that gets executed automatically during the contract creation. The constructor function basically executes the contract initialization code. This is the place, where user want to initialize certain variable to a specific value.
