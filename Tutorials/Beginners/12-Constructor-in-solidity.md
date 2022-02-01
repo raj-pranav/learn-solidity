@@ -8,7 +8,53 @@
 
 > DRAFT
 
-# Constructor
+# What is Constructor
+A constructor is an optional function that gets executed automatically during the contract creation. The constructor function basically executes the contract initialization code. This is the place, where user want to initialize certain variable to a specific value.
+
+Infact, constructor code runs after the [state variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md) initialization. 
+If state variable is not initialized with any value inline, then it will get initialized with the default value of respective [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md). The `constructor` keyword is used to create this function (but without function keyword).
+
+` Note : `There can have only one constructor in any given contract.
+
+```solidity
+constructor
+```
+
+It is not mandatory to have the constructor in every [smart contracts](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/4-what-is-a-Smart_contract.md), but even in absence of a specific declared constructor, a default constructor with empty parameter gets executed by the compiler.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract Consttr {
+  
+  constructor () {}
+  
+}
+```
+
+# How to define constructor
+A constructor can be defined, as shown in the above example. Now let's see how to define constructor for various purpose
+
+## Constructor to initialize a state variable
+A state variable can be directly initialized using the inline value assignment during the declaration itself, but it cost some gas (as it is going to be stored on the blockchain). Alternatively, we can also initialize it via a constructor
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract Consttr {
+  uint p ;    // state variable 
+  address owner ;
+  
+  constructor (uint val) {
+    p = val ;
+    owner = msg.sender ;  // msg.sender is a global variable
+  }
+  
+}
+```
+
 
 
 
@@ -17,7 +63,7 @@
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - constructor in Solidity]()
+[Github Gist - constructor in Solidity](https://gist.github.com/raj-pranav/ea33caf9855a49906de0d79859045e66)
 
 ---
 
