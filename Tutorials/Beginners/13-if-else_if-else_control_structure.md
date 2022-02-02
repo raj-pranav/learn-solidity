@@ -6,6 +6,29 @@
 [<img align= "right" src="/Tutorials/Beginners/images-for-docs/home.png" width="30" title="Learn Solidity - Home">](https://github.com/raj-pranav/learn-solidity)
 <br>
 
+ > DRAFT
+
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_if {
+
+    uint x;
+
+    function CompNum (uint _x) public view returns (string memory) {
+        if (_x > x) {
+            return 'The number entered is bigger';
+        } else if (_x < x) {
+            return 'Number entered is lesser';
+        } else {
+            return 'Both numbers are equal';
+        }
+        
+    }
+}
+```
 
 
 
