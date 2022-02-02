@@ -37,7 +37,7 @@ contract demo_if {
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - constructor in Solidity](https://gist.github.com/raj-pranav/ea33caf9855a49906de0d79859045e66)
+[Github Gist - If-else in Solidity](https://gist.github.com/raj-pranav/440ec3f10d1e7f11fb889757e7640106)
 
 ---
 
