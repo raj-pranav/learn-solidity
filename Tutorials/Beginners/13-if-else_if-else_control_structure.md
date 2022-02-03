@@ -7,7 +7,6 @@
 <br>
 <br>
 
- > DRAFT
 
 # If - else if - else in solidity
 If, else if, else - all together is one of the control structures available in solidity. A control structure is essentially a technique to control the execution flow of code, based on the given condition (that's why it is also referred as _conditional statement_). This structure simply evalulate condition at each stage and accordingly executes the block of code. The working principle of `if-else if-else` is similiar to any other programming language.
@@ -75,6 +74,23 @@ contract demo_if {
 `Notice :` that, we have changed the return [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) in this 👆 function (peviously it was `bool` , now it is `string`. Since string requires memory that's why it postfixed with the data type.
 
 
+### Using Ternary operator - to implement if and else
+You can also use a [Ternary Operator](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/8-Operators-in-solidity.md#ternary-operator---) to implement the `if-else` conditional block in just one line. The above example 👆, implemented using ternary operator 👇.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_if {
+    uint x = 10;
+    function Compare (uint _x) external view returns (string memory){
+        return _x >= x ? 'Given value is greater or equal to x' : 'Given value is less than x' ;
+        
+    }
+}   
+```
+
+
 ## If, else if , and else - all three together
 Now, there could be a situation where you want to extensively divide you criteria into multiple blocks and based on the evaluation you return the result. Let's look at the code below to evaluate the given number individually to  `less than` , `equal to` or `greater than`.
 
@@ -100,14 +116,43 @@ contract demo_if {
 }
 ```
 
-### Using Ternary operator for if, else if and else
+
+## Multiple else if statements
+There are certain scenarios, where you want to implement logic similiar to a `switch case` statement, then you need to use multiple `else if` block. The code below demonstarte the same thing, it is basically returning working weekday name from user's input number. It also takes care of weekend and out of range numbers.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_if2 {
+
+    function CompNum (uint _x) public pure returns (string memory) {
+        if (_x == 1) {
+            return 'Monday'; }
+        else if (_x == 2) {
+            return 'Tuesday';}
+        else if (_x == 3) {
+            return 'WednesDay';}
+        else if (_x == 4) {
+            return 'Thursay';}
+        else if (_x == 5) {
+            return 'Friday';}
+        else if ((_x == 6) || (_x == 7)) {
+            return 'It is a Weekend';}
+        else {
+            return 'Invalid Input';
+        }
+    }
+}
+```
+
 
 ---
 
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - If-else in Solidity](https://gist.github.com/raj-pranav/440ec3f10d1e7f11fb889757e7640106)
+[Github Gist - If-else in Solidity](https://gist.github.com/raj-pranav/440ec3f10d1e7f11fb889757e7640106)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 ---
 
