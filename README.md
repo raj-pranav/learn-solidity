@@ -24,7 +24,7 @@ This space is a beginners friendly and you can expect resources for intermediate
 
 ## Shareable code in Gist
 
-[GitHub Gist - Learn Solidity](https://gist.github.com/raj-pranav)
+[GitHub Gist - Learn Solidity](https://gist.github.com/raj-pranav)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 
 
