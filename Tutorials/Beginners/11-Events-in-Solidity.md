@@ -81,7 +81,7 @@ There is a maximum limit on indexing the number of parameters, which is `3`. You
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - Events in Solidity](https://gist.github.com/raj-pranav/1924e97cb5d8767be1279809f2c5479e)
+[Github Gist - Events in Solidity](https://gist.github.com/raj-pranav/1924e97cb5d8767be1279809f2c5479e)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 ---
 
