@@ -20,6 +20,9 @@
 
 ## If, else if , and else - all three together
 
+### Using Ternary operator for if, else if and else
+
+
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0 <0.9.0;
