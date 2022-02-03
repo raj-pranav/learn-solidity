@@ -54,14 +54,29 @@ and so on..
 
 
 ## If and else condition
+In the above example, the else part is not defined. We can define the else part to explicity handles a specific return value (instead solidity returns a default value). Look at the example code below to understand how it can be done.
 
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_if {
+    uint x = 10;
+    function Compare (uint _x) external view returns (string memory){
+        if (_x >= x) {   // if section
+            return 'Given value is greater or equal to x';}
+        else {          // else section
+            return 'Given value is less than x';
+        }
+    }
+}    
+    
+```
+`Notice :` that, we have changed the return [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) in this 👆 function (peviously it was `bool` , now it is `string`. Since string requires memory that's why it postfixed with the data type.
 
 
 ## If, else if , and else - all three together
-
-
-
-### Using Ternary operator for if, else if and else
+Now, there could be a situation where you want to extensively divide you criteria into multiple blocks and based on the evaluation you return the result. Let's look at the code below to evaluate the given number individually to  `less than` , `equal to` or `greater than`.
 
 
 ```solidity
@@ -85,7 +100,7 @@ contract demo_if {
 }
 ```
 
-
+### Using Ternary operator for if, else if and else
 
 ---
 
