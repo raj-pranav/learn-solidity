@@ -32,6 +32,9 @@ You can directly access online IDE from https://remix.ethereum.org/ , without th
 Offline version (installable) of Remix IDE is also available for the use and you can always get the latest release for all major OS type from [HERE](https://github.com/ethereum/remix-desktop/releases)
 
 # Remix UI walkaround (Online version)
+
+Release note for Remix IDE v0.21.1 is out. [Read more](https://medium.com/remix-ide/remix-v0-21-0-v0-21-1-released-550dbde6428b)
+
 This is the `default` (theme may vary based on your mode preference) web-app view for online Remix IDE.
 
 <img src="https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/images-for-docs/Remix_UI_v2.PNG" width="640" title="Remix web-app UI">
