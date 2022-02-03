@@ -62,7 +62,7 @@ contract Consttr {
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - constructor in Solidity](https://gist.github.com/raj-pranav/ea33caf9855a49906de0d79859045e66)
+[Github Gist - constructor in Solidity](https://gist.github.com/raj-pranav/ea33caf9855a49906de0d79859045e66)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 ---
 
