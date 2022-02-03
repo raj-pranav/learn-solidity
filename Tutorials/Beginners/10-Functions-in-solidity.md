@@ -110,7 +110,7 @@ contract Test {
 # Find all the codes written in this Section at Gist
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - Function in Solidity](https://gist.github.com/raj-pranav/fff69c99ff8fb1d6ae172aa86b13d077)
+[Github Gist - Function in Solidity](https://gist.github.com/raj-pranav/fff69c99ff8fb1d6ae172aa86b13d077)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 ---
 
