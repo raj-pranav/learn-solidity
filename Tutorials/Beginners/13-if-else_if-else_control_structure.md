@@ -10,15 +10,56 @@
  > DRAFT
 
 # If - else if - else in solidity
+If, else if, else - all together is one of the control structures available in solidity. A control structure is essentially a technique to control the execution flow of code, based on the given condition (that's why it is also referred as _conditional statement_). This structure simply evalulate condition at each stage and accordingly executes the block of code. The working principle of `if-else if-else` is similiar to any other programming language.
 
+Sample structure of the **if - else if - else**
+
+```solidity
+if (condition) {
+  body ;}
+else if (another condition) {
+  body ; }
+else {
+  body ; }
+```
+
+Let's break them all and get to know how they work in various scenarios
 
 ## If condition only
+` If ` condition block is used in situations, where you are only concerned about evaluating a particular condition to true, and return some result BUT never bothered; what if that condition evaluates to false. You will only need one if statement, in such situation.
+
+In the given example code, the [state variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md) is initialized with 10 and a [function](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/10-Functions-in-solidity.md) exists which compares the supplied value `_x` with that of `x`, if the supplied value is greater of equal to x then return true otherwise 'nothing has been defined explicity for else part.
 
 
-## If and else condition only
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_if {
+    uint x = 10;
+    function Compare (uint _x) external view returns (bool){
+        if (_x >= x) {    // only one if statement
+            return true;
+        }
+    }
+}    
+    
+```
+
+`Note :` Solidity will take care of the else part, even though you have not explicitly mentioned it and it will simply return false (as seen in above example).<br>
+return type `boolean` -> else will return false
+return type `uint`    -> else will return 0
+and so on..
+
+
+## If and else condition
+
 
 
 ## If, else if , and else - all three together
+
+
 
 ### Using Ternary operator for if, else if and else
 
