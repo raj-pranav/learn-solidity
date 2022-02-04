@@ -24,14 +24,14 @@ pragma solidity >=0.6.0 <0.9.0;
 contract demo_for {
     // syntax
     function sample() external {
-      for (initalizer, check condition, increment/decrement) {
+      for (initalizer ; check condition ; increment/decrement) {
           body of loop ;
       }
     }
 }
 
     // Example
-    for (uint i=0,i<10, i++){
+    for (uint i=0 ; i<10 ; i++){
         // do something in body
     }
 }
