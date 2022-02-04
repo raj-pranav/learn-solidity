@@ -27,7 +27,7 @@ You can use solidity to write smart contracts (which is simply a code written in
 # How it works
 Step 1: You write a smart contract
 Step 2: Compile it
-  - The comiler will generate three files
+  - The compiler will generate three files
     - Contract Metadata : JSON file having info such as input, output, data types, compiler version and so on.., of the contract
     - Bytecode : Hexadecimal data with opcode, which gets deployed on the `EVM` (Ethereum Virtual Machine) -> EVM powers the Ethereum blockchain
     - ABI : Application Binary Interface, helps to interact with another contracts on the blockchain as well as from outside the blockchain.
