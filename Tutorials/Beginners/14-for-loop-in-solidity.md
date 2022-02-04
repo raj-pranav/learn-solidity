@@ -10,6 +10,50 @@
 > DRAFT
 
 # What is FOR LOOP
+For loop's primary objective is to iterate through each data of a given sequence, in order. That's it !
+
+In every programming language the task of for loop is pretty much this only. For loop can iterate through sequence such as an array.
+
+## Sample `for loop` structure in solidity
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_for {
+    // syntax
+    function sample() external {
+      for (initalizer, check condition, increment/decrement) {
+          body of loop ;
+      }
+    }
+}
+
+    // Example
+    for (uint i=0,i<10, i++){
+        // do something in body
+    }
+}
+```
+## For loop in action
+
+```solidity
+
+```
+
+# If-else inside for loop
+
+
+# For loop with `continue`
+
+# For loop with `break`
+
+# Both `continue` & `break` in For loop
+
+# Other control structures in Solidity
+
+`while` and `do while`
 
 
 
