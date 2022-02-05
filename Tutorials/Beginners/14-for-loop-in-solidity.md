@@ -7,7 +7,7 @@
 <br>
 <br>
 
-> DRAFT
+
 
 # What is FOR LOOP
 For loop's primary objective is to iterate through each data of a given sequence, in order. That's it !
