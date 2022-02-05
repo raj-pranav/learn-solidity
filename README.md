@@ -12,7 +12,7 @@
 
 Hi there,
 
-I am glad that you reach to this web space to learn the fundamentals of `Solidity` Programming language to build the `Smart Contracts`.
+I am glad that you are at this Github repository to learn the `Solidity` Programming language & build `Smart Contracts`.
 
 This space is a beginners friendly and you can expect resources for intermediate & experince developers as well .. as the time passes. I have heavily invested my time and resources to create (& still doing it ...) the concise learning place for you - at absolutely Free.
 
