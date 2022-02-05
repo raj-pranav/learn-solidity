@@ -22,7 +22,7 @@ In every programming language the task of for loop is pretty much this only. For
 pragma solidity >=0.6.0 <0.9.0;
 
 contract demo_for {
-    // syntax
+// ------------  syntax  ----------------
     function sample() external {
       for (initalizer ; check condition ; increment/decrement) {
           body of loop ;
@@ -30,16 +30,36 @@ contract demo_for {
     }
 }
 
-    // Example
+// --------------- Example ----------------
     for (uint i=0 ; i<10 ; i++){
         // do something in body
     }
 }
 ```
+<br>
+
+Learn about [function in solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/10-Functions-in-solidity.md) as well as [state variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md).<br>
+
 ## For loop in action
 
-```solidity
+In this code (shown below), a state variable is created and initialized with `0`. There exist a function `update_cnt`, which executes the for loop internally and update the counter status. For the next iteration, counter will not start from zero, instead from the last value.
 
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_for {
+    uint public counter = 0;
+    
+    function update_cnt() public {
+               
+        for (uint i=0 ; i<10 ; i++){
+            counter+= i ;
+        }
+    }
+    
+}
 ```
 
 # If-else inside for loop
