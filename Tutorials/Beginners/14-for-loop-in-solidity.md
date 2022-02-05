@@ -112,7 +112,7 @@ contract demo_for {
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - If-else in Solidity]()  |-->   [`Try in Remix`](https://remix.ethereum.org/)
+[Github Gist - If-else in Solidity](https://gist.github.com/raj-pranav/e06f38615b0bec4430612d6d10e869f5)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 ---
 
