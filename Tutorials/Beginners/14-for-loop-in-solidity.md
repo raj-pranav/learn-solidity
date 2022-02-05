@@ -96,14 +96,106 @@ contract demo_for {
 
 
 # For loop with `continue`
+The keyword continue is used to skip a particular iteration based upon the condition defined in `if` statement.
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_for {
+    uint public counter = 0;
+    uint8 public curr_milestone;
+    
+    function update_cnt() public returns (uint8){
+           
+        for (uint i=0 ; i<10 ; i++){
+            counter+= i ;
+            if (i == 1) {
+                continue;   // execution corresponding to i == 1 will be skipped, `i` will move to 2
+            }
+        }
+    }
+    
+}
+```
 
 # For loop with `break`
+Some times you don't want a for loop to iterate through each item in the sequence till the very end, instead want to exit a for loop prematuraily (upon satisfying a condition). This can be achieved by `break`.
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_for {
+    uint public counter = 0;
+    uint8 public curr_milestone;
+    
+    function update_cnt() public {
+           
+        for (uint i=0 ; i<10 ; i++){
+            counter+= i ;
+            if (counter >= 50) {
+                break;      // for loop breaks at counter value >= 50
+            }
+        }
+    }
+    
+}
+```
 
 # Both `continue` & `break` in For loop
+There are situations wherein you want to use both of them. Apply them accordingly.
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_for {
+    uint public counter = 0;
+    uint8 public curr_milestone;
+    
+    function update_cnt() public {
+           
+        for (uint i=0 ; i<10 ; i++){
+            counter+= i ;
+            if (counter == 29) {
+                continue;
+            }
+            if (counter >= 50) {
+                break;
+            }
+        }
+    }
+```
 
 # Other control structures in Solidity
+Ther are other control structure (in loops) such as `while` and `do while` loop. You can use them in your code but it is not advisable to use these loops. Since these loops are unbounded as this can hit the gas limit, causing your transaction to fail. Every transaction have a gas limit and these loops may endup exhausting those limits.
 
-`while` and `do while`
+If you are pretty sure about the execution pattern and the cost of operations, then go ahead and use it.
+
+Example for while loop
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_for {
+    uint public counter = 0;
+    
+    function update_cnt() public retuns (uint8){
+           
+        while (counter <= 10**2) {
+            return counter ;
+        }
+        }
+    }
+    
+}
+```
 
 
 
