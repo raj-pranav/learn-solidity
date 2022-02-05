@@ -61,8 +61,38 @@ contract demo_for {
     
 }
 ```
+<br>
 
-# If-else inside for loop
+`Note : ` You can not declare a for loop without a function or [constructor](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/12-Constructor-in-solidity.md), because these are the two ways which allows you to execute a for loop.
+
+<br>
+
+# If-else inside a for loop
+There could be many scenarios, wherein you would like to take some measures upon reaching a condition. Without if-else, a for loop will start and executes till end without performing any other additional task. <br>
+
+Let's take the above example, wherein you wanted to record a milestone once the counter value is above `30`. You can use use a [if condition](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/13-if-else_if-else_control_structure.md)
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.6.0 <0.9.0;
+
+contract demo_for {
+    uint public counter = 0;
+    uint8 public curr_milestone;
+    
+    function update_cnt() public returns (uint8){
+           
+        for (uint i=0 ; i<10 ; i++){
+            counter+= i ;
+            if (counter >= 30) {
+                curr_milestone = 1;
+            }
+        }
+    }
+    
+}
+```
 
 
 # For loop with `continue`
