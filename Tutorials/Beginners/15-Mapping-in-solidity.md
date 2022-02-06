@@ -8,7 +8,6 @@
 <br>
 
 
-> DRAFT
 
 # What's Mapping
 
