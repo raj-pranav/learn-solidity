@@ -5,7 +5,7 @@
 [<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PranavRaj90?style=social">](https://twitter.com/intent/follow?screen_name=PranavRaj90)
 [<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/raj-pranav/learn-solidity?label=Learn%20Solidity&style=social">](https://github.com/raj-pranav/learn-solidity/)
 [<img alt="GitHub Fork" src="https://img.shields.io/github/forks/raj-pranav/learn-solidity?color=silver">](https://img.shields.io/github/forks/raj-pranav/learn-solidity)
-[<img alt="GitHub Gist" src="https://img.shields.io/badge/Github-Gist-Black?style=social&logo=GitHub">](https://gist.github.com/raj-pranav)
+[<img alt="GitHub Star" src="https://img.shields.io/github/stars/raj-pranav?affiliations=OWNER&logoColor=%2317e862&style=social">](https://github.com/raj-pranav/learn-solidity/stargazers)
 ![](https://komarev.com/ghpvc/?username=raj-pranav&color=blue)
 
 <br>
@@ -24,6 +24,7 @@ This space is a beginners friendly and you can expect resources for intermediate
 
 
 ## Shareable code in Gist
+[<img alt="GitHub Gist" src="https://img.shields.io/badge/Github-Gist-Black?style=social&logo=GitHub">](https://gist.github.com/raj-pranav)
 
 [GitHub Gist - Learn Solidity](https://gist.github.com/raj-pranav)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
