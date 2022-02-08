@@ -12,7 +12,9 @@
 
 
 # Storage
+Storage is the permanent location which stores data on the blockchain. It also directly indicates that all [state variables](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md) are stored in the storage. Storing data in storage (on blockchain) costs Gas (or ETH). Data on the storage is persistent (it stay there as long as blockchain exists or a [smart contract](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/4-what-is-a-Smart_contract.md) exists).<br>
 
+Data is stored contiguously one after other starting with the first state variable, which is stored in `slot 0`. Size of the state variables are determined based on their data type. Size of single storage can be upto `32 bytes`, which means if there are multiple state variable and all of them together build up to a size of 32 bytes then one storage slot is sufficient to store all of them contineously, otherwise, the overfolwing items are allocated in next storage slot. `Structs` and `array` data always stored on a new storage slot. 
 
 # Memory
 
