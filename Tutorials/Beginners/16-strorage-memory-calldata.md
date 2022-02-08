@@ -8,9 +8,6 @@
 <br>
 
 
-> DRAFT
-
-
 # Storage
 Storage is the permanent location which stores data on the blockchain. It also directly indicates that all [state variables](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md) are stored in the storage. Storing data in storage (on blockchain) costs Gas (or ETH). Data on the storage is persistent (it stay there as long as blockchain exists or a [smart contract](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/4-what-is-a-Smart_contract.md) exists). A contract can neither read nor write to any other storage apart from its own.
 <br>
