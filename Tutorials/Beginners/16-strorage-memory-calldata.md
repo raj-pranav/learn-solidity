@@ -12,12 +12,57 @@
 
 
 # Storage
-Storage is the permanent location which stores data on the blockchain. It also directly indicates that all [state variables](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md) are stored in the storage. Storing data in storage (on blockchain) costs Gas (or ETH). Data on the storage is persistent (it stay there as long as blockchain exists or a [smart contract](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/4-what-is-a-Smart_contract.md) exists).<br>
+Storage is the permanent location which stores data on the blockchain. It also directly indicates that all [state variables](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md) are stored in the storage. Storing data in storage (on blockchain) costs Gas (or ETH). Data on the storage is persistent (it stay there as long as blockchain exists or a [smart contract](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/4-what-is-a-Smart_contract.md) exists). A contract can neither read nor write to any other storage apart from its own.
+<br>
+
+Image shown below represents an high level architecture of `EVM` - Ethereum Virtual Machine and you can locate the **Storage** at the bottom-right side (highligthed within the square shape). It says it is a Persistent location.
+
+<img src="/Tutorials/Beginners/images-for-docs/Ethereum-storage.png" width="520" title="Storage in Ethereum">
 
 Data is stored contiguously one after other starting with the first state variable, which is stored in `slot 0`. Size of the state variables are determined based on their data type. Size of single storage can be upto `32 bytes`, which means if there are multiple state variable and all of them together build up to a size of 32 bytes then one storage slot is sufficient to store all of them contineously, otherwise, the overfolwing items are allocated in next storage slot. `Structs` and `array` data always stored on a new storage slot. 
 
-# Memory
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
 
+contract XYZ {
+  // all of these are state variable and stored on the blockchain permanently
+  uint x ;
+  uint y = 10 ;
+  string Name ;
+  
+}
+```
+
+
+# Memory
+A memory is a temporary location, which allows you to load a variable temporarily and modifiy it. This does not change the original data but helps you to perform certain operations on a temporary copy of it.
+
+Image shown below represents an high level architecture of `EVM` - Ethereum Virtual Machine and you can locate the **Memory** at the middle-right (present within the rectangular box). It says it is a `volatile` state.
+
+<img src="/Tutorials/Beginners/images-for-docs/Ethereum-memory.png" width="520" title="Memory in Ethereum">
+
+`Example - `
+
+Let say, you have created a string in memory and it is being used by a function `temp_change`. This [function](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/10-Functions-in-solidity.md) can apply some operations (modify/update) and after function stops its execution, this memory data also gets destroyed. It stays untill the lifecycle of that function. The variable `_name` does not get stored on the blockchain and it will not exists after the function 'temp_change' has finished execution.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract XYZ {
+  string public name;
+  
+  function per_change() external returns (string memory) {
+      name = 'ETH User';
+      return name;
+    }
+  
+  function temp_change(string memory _name) external view returns (string memory){
+      return _name;
+  }
+}
+```
 
 # Calldata
 
