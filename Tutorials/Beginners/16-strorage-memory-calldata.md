@@ -27,7 +27,8 @@ pragma solidity >=0.6.0 <0.9.0;
 
 contract XYZ {
   // all of these are state variable and stored on the blockchain permanently
-  uint x ;
+  // storage keyword is not required before the variable name, while declaring a state variable
+  uint[] x ;
   uint y = 10 ;
   string Name ;
   
@@ -36,7 +37,7 @@ contract XYZ {
 
 
 # Memory
-A memory is a temporary location, which allows you to load a variable temporarily and modifiy it. This does not change the original data but helps you to perform certain operations on a temporary copy of it.
+A memory is a temporary location, which allows you to load a variable temporarily and modifiy it. This does not change the original data but helps you to perform certain operations on a temporary copy of it. Memory is more costly the larger it grows.
 
 Image shown below represents an high level architecture of `EVM` - Ethereum Virtual Machine and you can locate the **Memory** at the middle-right (present within the rectangular box). It says it is a `volatile` state.
 
@@ -65,10 +66,31 @@ contract XYZ {
 ```
 
 # Calldata
+Calldata is a special data location that contains the function arguments. Calldata is similiar to memory but it can be used to pass argument to function. You can also choose `memory` for function inputs but using `calldata` can save more you gas.Calldata is a non-modifiable, non-persistent area where function arguments are stored.
 
+## How calldata saves Gas ..
+When you use calldata as data location for a function arguments, which is also passed to another function as argument, then it gets directly passed (unmodified) to another function without being copied, like a memory elements. So, instead of using memory you can choose calldata to save more on Gas.
 
+`Note: ` Memory and Calldata are allowed in all functions types regardless of their visibility.
 
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
 
+contract XYZ {
+  
+  uint[] x;
+
+  function f1 (uint[] calldata _x) external {
+      x = _x ;
+  }
+
+  function f2(uint[] calldata _x) internal {
+      uint p = _x[1];
+  }
+
+}
+```
 
 ---
 
