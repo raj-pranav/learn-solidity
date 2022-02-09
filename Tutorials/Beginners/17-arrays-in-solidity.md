@@ -14,8 +14,27 @@
 
 ## Fixed size
 
+### Initialize fixed size array
+
 ## Dynamic
 
+### Initialize dynamic size array
+
+
+# Array Manipulation
+
+## Add
+
+## Get
+
+## Update
+
+## Delete
+
+
+# Array length
+
+# Array as Input and/or Output
 
 
 
