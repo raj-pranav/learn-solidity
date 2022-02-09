@@ -14,7 +14,7 @@
 
 ## Fixed size
 
-## Dyanamic
+## Dynamic
 
 
 
