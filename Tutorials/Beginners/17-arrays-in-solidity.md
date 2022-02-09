@@ -10,7 +10,7 @@
 
 > DRAFT
 
-# Two types
+# Array Type - Based on Size
 
 ## Fixed size
 
@@ -19,6 +19,9 @@
 ## Dynamic
 
 ### Initialize dynamic size array
+
+
+# Array Type - Based on Data Type (or value type)
 
 
 # Array Manipulation
@@ -31,10 +34,15 @@
 
 ## Delete
 
+## pop
+
 
 # Array length
 
 # Array as Input and/or Output
+
+
+# In-memory array
 
 
 
