@@ -94,7 +94,7 @@ contract XYZ {
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - Mapping in Solidity](https://gist.github.com/raj-pranav/1447bdfbf4938f1e8df7429646b41b7b)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
+[Github Gist - Storage-Memory-Calldata in Solidity](https://gist.github.com/raj-pranav/1447bdfbf4938f1e8df7429646b41b7b)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 ---
 
