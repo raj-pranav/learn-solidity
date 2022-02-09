@@ -10,6 +10,15 @@
 
 > DRAFT
 
+# Two types
+
+## Fixed size
+
+## Dyanamic
+
+
+
+
 ---
 
 # Find all the codes written in this section
