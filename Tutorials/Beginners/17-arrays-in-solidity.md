@@ -10,41 +10,167 @@
 
 > DRAFT
 
+Note:
+Array elements can be of any type, including mapping or struct.
+.push() and .push(value)
+use bytes for arbitrary-length raw byte data 
+string for arbitrary-length string (UTF-8) data.
+
+**Arrays** are collection of data of same type, which means [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) of array has to be defined in prior (at the time of declaration).
+
 # Array Type - Based on Size
 
-## Fixed size
+Arrays are broadly classified as **Fixed size array** or **dynamic size array**. Sometimes, it is also referred as compile time fixed or dynamic array.
 
-### Initialize fixed size array
+## Fixed size array
+As the name suggest, they have a fixed size and can't grow further or even reduce below the specified size. The size is defined at the time of declaration. If values are not assigned to the array during initialization then all the elements of fixed size array are initialized to `0` otherwise thr given value are assigned to it. There is no concept of empty, null or none in solidity.
 
-## Dynamic
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
 
-### Initialize dynamic size array
+contract array_sample {
+    uint [5] myFixedArray ; // length is 5, all elements are initialized to zero
+    uint [5] fewVal = [1,2,3];  // length is 5, fisrt 3 elements 1,2,3 and remaining two are 0
+    uint [5] allAssigned = [1,2,3,4,5]; // length is 5, elements are 1,2,3,4,5
+  
+  // Check the content of each array
+    function getElements() public view returns (uint[5] memory, uint[5] memory, uint[5] memory){
+        return (myFixedArray, fewVal, allAssigned);
+    }
+}
+```
+<br>
 
+`Note : ` You can NOT specify just **uint[] memory** as return type -> it will throw compilation error. You should always use fixed size array (example - as shown in the code above **uint[5] memory**) having same size as the actual returning variable.
 
-# Array Type - Based on Data Type (or value type)
+<br>
+
+## Dynamic size array
+Dynamic size array does not have a fixed length. These types of array are best suited in cases where number of items are not known in prior. Arrays can grow indefinitely in length.<br>
+Dynamic array without assignment has a length of `0` and in another case the the dynamic array will have same length as there are number of assigned value. Later on the number of elements can be added/removed and so will the size be adjusted accordingly.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract array_sample {
+    uint[] myDynArray ; // length is 0
+    uint[] someVal = [1,2,3];  // length is 3
+  
+  // Check the content of each array
+    function getElements() public view returns (uint[] memory, uint[] memory){
+        return (myDynArray, someVal);
+    }
+    // Check the size of each array
+    function getSize() public view returns (uint , uint){
+        return (myDynArray.length, someVal.length);
+    }
+}
+```
 
 
 # Array Manipulation
+There are a few built in functions in solidity which helps to add, remove, update or even delete the data to/from an array. Let's look each of them with example.
 
-## Add
 
-## Get
+## Adding element -> push
 
-## Update
+### For Dynamic array only
+Push method adds an element at the end of the array. Push can NOT work on fixed size array, it will work only with dynamic array.<br>
+There are two variations of Push, which are
+- array_name.push()   --> without any argument
+- array_name.push(x)  --> with a argument (it accepts only one argument at a time)
 
-## Delete
+Push() will insert a zero initialized value at the end of dynamic array and Push(x) will insert the passed argument at the end of dynamic array <br>
+
+- Both push() and push(x) will increment the length of array by `1`
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract array_sample {
+    uint[] DynArray ;
+    uint[4] fixArray ;
+
+    // push element to dynamic array
+    function push_elem(uint i) external {
+        DynArray.push();    // add zero-initialized value at the end
+        DynArray.push(i);   // add value of 'i' at the end
+    }
+    // view the array content
+    function viewArray() public view returns (uint[] memory, uint[4] memory) {
+        return (DynArray,fixArray)  ;
+    }
+    // Fetch the size of array
+    function SizeArray() public view returns (uint, uint) {
+        return (DynArray.length, fixArray.length);
+    }
+}
+```
+
+### Replacing element of Fixed size (static) array
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract array_sample {
+    uint[4] fixArray ;
+
+    function add_elem(uint x) external {
+        fixArray[0] = x;    // replace previous element at index 0 with x
+        // remaining all three elements will still be zero
+    }
+
+    // view the array content
+    function viewArray() public view returns (uint[4] memory) {
+        return (fixArray)  ;
+    }
+    // Fetch the size of array
+    function SizeArray() public view returns (uint) {
+        return fixArray.length;
+    }
+}
+```
+
+`Note: ` You can't replace the value of a dynamic array, unless the calling function is decalred as `payable`
 
 ## pop
+```solidity
+
+```
+
+## Update
+```solidity
+
+```
+
+## Delete
+```solidity
+
+```
 
 
-# Array length
+## Few additional function
+
+### Array Length
+
+### Get element
+
 
 # Array as Input and/or Output
 
+# Array Literals
 
 # In-memory array
 
+# Special array
 
+## bytes
+
+## string
 
 ---
 
