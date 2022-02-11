@@ -10,13 +10,8 @@
 
 > DRAFT
 
-Note:
-Array elements can be of any type, including mapping or struct.
-.push() and .push(value)
-use bytes for arbitrary-length raw byte data 
-string for arbitrary-length string (UTF-8) data.
 
-**Arrays** are collection of data of same type, which means [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) of array has to be defined in prior (at the time of declaration).
+**Arrays** are collection of data of same type, which means [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) of array has to be defined in prior (at the time of declaration). Array elements can be of any type, including mapping or struct.
 
 # Array Type - Based on Size
 
@@ -76,7 +71,7 @@ There are a few built in functions in solidity which helps to add, remove, updat
 
 ## Adding element -> push
 
-### For Dynamic array only
+### Push will work with Dynamic array only
 Push method adds an element at the end of the array. Push can NOT work on fixed size array, it will work only with dynamic array.<br>
 There are two variations of Push, which are
 - array_name.push()   --> without any argument
@@ -109,8 +104,16 @@ contract array_sample {
     }
 }
 ```
+<br>
 
-### Replacing element of Fixed size (static) array
+
+## pop
+```solidity
+
+```
+
+## Update/Replace
+Updating/Replacing an existing element at a given index with new element
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -137,15 +140,6 @@ contract array_sample {
 
 `Note: ` You can't replace the value of a dynamic array, unless the calling function is decalred as `payable`
 
-## pop
-```solidity
-
-```
-
-## Update
-```solidity
-
-```
 
 ## Delete
 ```solidity
@@ -158,6 +152,8 @@ contract array_sample {
 ### Array Length
 
 ### Get element
+
+
 
 
 # Array as Input and/or Output
