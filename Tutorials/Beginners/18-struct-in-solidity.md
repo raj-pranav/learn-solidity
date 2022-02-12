@@ -10,6 +10,32 @@
 
 > DRAFT
 
+# Purpose of Struct
+
+# Declaring a struct
+
+## Single struct
+
+## Array of structs
+
+# Initializing struct elements
+
+## Default initialize
+
+## As per element's order
+
+## Using key-value pair
+
+# Accessing struct element
+
+## Replacing/Updating struct element
+
+# Deleting struct
+
+## Delete an element
+
+## Delete entire struct
+
 
 ---
 
