@@ -11,7 +11,7 @@
 > DRAFT
 
 
-**Arrays** are collection of data of same type, which means [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) of array has to be defined in prior (at the time of declaration). Array elements can be of any type, including mapping or struct.
+**Arrays** are collection of data of same type, which means [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) of array has to be defined in prior (at the time of declaration). Array elements can be of any type, including mapping or struct. Array are `zero-based` index, which means the first element is located at zero and so on.
 
 # Array Type - Based on Size
 
@@ -69,7 +69,7 @@ contract array_sample {
 There are a few built in functions in solidity which helps to add, remove, update or even delete the data to/from an array. Let's look each of them with example.
 
 
-## Adding element -> push
+## Adding an element -> push
 
 ### Push will work with Dynamic array only
 Push method adds an element at the end of the array. Push can NOT work on fixed size array, it will work only with dynamic array.<br>
@@ -107,9 +107,27 @@ contract array_sample {
 <br>
 
 
-## pop
-```solidity
+## Removing an element -> pop
+A pop method simply removes the last element of an array, thus decereasing the size of array by 1. Pop method will also work only with dynamic array. It can NOT be applied on a static (fixed size) array.
 
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract array_sample {
+    uint[] DynArray = [1,2,3,4,5];
+
+    // Removes element from end of array
+    function pop_elem() external {
+        DynArray.pop();
+    }
+
+    // view the array length and its content
+    function viewSize_val() public view returns (uint, uint[] memory) {
+        return (DynArray.length,DynArray)  ;
+    }
+   
+}
 ```
 
 ## Update/Replace
@@ -142,31 +160,101 @@ contract array_sample {
 
 
 ## Delete
-```solidity
+The keyword `delete` can able to delete an element or even entire array (depends on how it is used). Let's see two scenarios,
 
+- Delete one element (by index)
+    - syntax > delete array_name [index] : This will delete the value of existing element and replace it with `0`. 
+    - It does NOT change the length of array (so the size remains same)
+- Delete entire array (by array name)
+    - syntax > delete array_name : This is removes all the elements of the array completely (those elements with index will not exists now)
+    - It chnages the length of array to `0` (eventually array size to `0`)
+
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract array_sample {
+    uint[] DynArray = [1,2,3,4,5];
+    uint[] secondArr = [6,7,8,9];
+
+    // Removes element/array using delete keyword
+    function del_elem() external {
+        delete DynArray[2]; // delete element at index 2, which is 3
+        delete secondArr;   // deletes entire array
+    }
+
+    // view the array length and its content
+    function viewSize_val() public view returns (uint[] memory, uint, uint[] memory, uint) {
+        return (DynArray, DynArray.length,secondArr, secondArr.length)  ;
+    }
+   
+}
 ```
 
 
 ## Few additional function
 
 ### Array Length
+You already have seen the usecase of length method (in all above examples). It basically returns the length of an array. There is no concept of ` length() `, so always use it WITHOUT the regular bracket.
+
+```solidity
+array_name.length ; // make sure not to use length()
+```
 
 ### Get element
+Get element will help you to fetch a value from an index. There is no explicit function/method having name get but making use of array indexing, you can fetch/get the value. Accessing element by index will not change the element value or the size of array.
 
+`Note: ` Make sure that index should be within the length of the array.
 
+```solidity
 
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
 
-# Array as Input and/or Output
+contract array_sample {
+    uint[] DynArray = [1,2,3,4,5];
 
-# Array Literals
+    // Get/fetch element from array using index
+    function get_elem(uint _index) external view returns (uint) {
+        return DynArray[_index]; 
+    }
+  
+}
+
+```
 
 # In-memory array
+A In-memory array does not lives on the blockchain rather they exists until the lifecycle of the function within which it has been decalred. It's a good idea to create a temporary array (in-memory array) to perform some intermediate calculations and then let it be destroyed.
+- An In-memory array must be a fixed size array (It is NOT possible to create a dynamic array)
+- It has to be created within some function
 
-# Special array
+```solidity
+function create_arr () external {
+    // syntax
+    data-type[] memory variable_name = new data-type[](size) ;
+    
+    // example
+    uint[] memory myVar = new uint[](4) ;
+```
+<br>
 
-## bytes
+Example
 
-## string
+<br>
+
+```solidity
+
+```
+
+
+## Few more topics for advanced section
+
+- Array as Input and/or Output
+- Array Literals
+- Special array
+    - bytes
+    - string
 
 ---
 
