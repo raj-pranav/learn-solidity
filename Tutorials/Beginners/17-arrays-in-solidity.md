@@ -8,7 +8,6 @@
 <br>
 
 
-> DRAFT
 
 
 **Arrays** are collection of data of same type, which means [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) of array has to be defined in prior (at the time of declaration). Array elements can be of any type, including mapping or struct. Array are `zero-based` index, which means the first element is located at zero and so on.
@@ -279,7 +278,7 @@ contract array_sample {
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - Arrays Solidity]()  |-->   [`Try in Remix`](https://remix.ethereum.org/)
+[Github Gist - Arrays Solidity](https://gist.github.com/raj-pranav/3dc6432d2de470b99c600000afcc863e)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 ---
 
