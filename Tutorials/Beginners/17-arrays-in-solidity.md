@@ -239,12 +239,29 @@ function create_arr () external {
 ```
 <br>
 
-Example
 
-<br>
+Example : Creating an In-memory array and fill each element with a predefined value.
+
 
 ```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
 
+contract array_sample {
+    uint[] DynArray = [1,2,3,4,5];
+
+    // Fill array with data
+    function fill_elem() public pure returns (uint[] memory){
+        uint[] memory myArr = new uint[](3);
+        
+        myArr[0] = 8;
+        myArr[1] = 9;
+        myArr[2] = 10;
+
+        return myArr ;
+    }
+
+}
 ```
 
 
@@ -255,6 +272,7 @@ Example
 - Special array
     - bytes
     - string
+
 
 ---
 
