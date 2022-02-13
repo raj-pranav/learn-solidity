@@ -42,6 +42,7 @@ contract struct_sample {
 
 After declaring the struct, you can use it as state varible for the single instance as well as multiple instance (as array). Let's see both of them in the two respectibe section below.
 
+
 ## Single instance of a struct - as state variable
 
 Declaring a single instance of myOrg as org.
@@ -78,13 +79,15 @@ Image for illustration purpose: multiple struct (array of struc)
 ![array_struct](https://user-images.githubusercontent.com/48473708/153769017-316825fd-e2d5-4eec-a276-db2be312539e.png)
 
 
-# Initializing struct elements
-Elements of a struct can be initialized in three different ways, which are described below 
+# Initializing/Updating single Struct
 
-## Default initialize
+## Initializing struct elements - with value
+Elements of a struct can be initialized in four different ways, which are described below 
+
+### Default initialize
 A default initialization means initializing a struct member to its default value according to their data type. 
 
-To your surprise, I have the struct is automatically initialized when declared as state variable, in the above code.
+To your surprise, the struct is automatically initialized upon declaring it as state variable, in the above code.
 
 Look at the initialization line,
 ```solidity
@@ -96,13 +99,81 @@ All the member of the struct `org` has been assigned with the default value
 
 `sidenote: ` when you delete a struct, each member of the struct will be set to its default value as per their data type.
 
+### Initialize value using constructor
+A constructor can also be used to initialize values of the struct member, as shown below
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    struct myOrg {
+        string name;
+        uint num_emp;
+    }
+
+    myOrg public org ;
+
+    constructor (string memory _name, uint _num) {
+        org.name = _name;
+        org.num_emp = _num;
+    }
+}
+```
+
+Before deploying the contract, you have to pass values to the constructor and this can be done done one time only.
+
+### Update individual element with corresponding value
+After declaring a struct, you can update the value of each member by passing arguments. To set the value, I have created a function - this function will take input from user and sets the new value to respective member.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    //example
+    struct myOrg {
+        string name;
+        uint num_emp;
+    }
+    myOrg public org ;
+
+    function set_val(string memory _newname, uint _newEmp) external {
+        org.name = _newname ;
+        org.num_emp = _newEmp;
+    }
+}
+```
 
 
-## As per element's order
+### Update elements by passing value in their order
+You can pass the value as per the member declaration order, as shown in the code below
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    //example
+    struct myOrg {
+        string name;
+        uint num_emp;
+    }
+    myOrg public org ;
+
+    function set_val() external {
+        org = myOrg('pqr', 300);
+    }
+}
+```
 
 
-## Using key-value pair
+### Using key-value pair
 
+# Initializing/Updating Array of Structs
 
 # Accessing struct element
 
