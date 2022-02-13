@@ -287,7 +287,7 @@ contract struct_sample {
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - Struct in Solidity]()  |-->   [`Try in Remix`](https://remix.ethereum.org/)
+[Github Gist - Struct in Solidity](https://gist.github.com/raj-pranav/d392e57530fa0d6fc3a2f55e7bf97b53)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 ---
 
