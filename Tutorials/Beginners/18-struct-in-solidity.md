@@ -272,11 +272,12 @@ contract struct_sample {
 
 # Accessing struct element
 
-## Replacing/Updating struct element
 
-# Deleting struct
+# Delete
 
-## Delete an element
+## Delete one element of struct
+
+## Delete one struct from array
 
 ## Delete entire struct
 
@@ -286,7 +287,7 @@ contract struct_sample {
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - Arrays Solidity]()  |-->   [`Try in Remix`](https://remix.ethereum.org/)
+[Github Gist - Struct in Solidity]()  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 ---
 
