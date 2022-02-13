@@ -271,7 +271,68 @@ contract struct_sample {
 
 
 # Accessing struct element
+You can access a specific struct of an array and all its element in the following way.
 
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    struct myOrg {
+        string name;
+        uint num_emp;
+    }
+
+    myOrg[] public orgs ;   // state variable
+
+    function set_vals() external {
+        myOrg memory org_1 = myOrg('org1', 1);
+        myOrg memory org_2 = myOrg({name:'org2', num_emp:2});
+        orgs.push(org_1);
+        orgs.push(org_2);
+    }
+    // accessing struct's member value
+    function get_data(uint ind) external view returns (string memory, uint){
+        myOrg memory _org = orgs[ind];
+        return (_org.name, _org.num_emp);
+    }
+
+}
+```
+
+# Updating individual value of an struct
+You can pick a specific struct from the array (it will load all its elements of that strcut) and then assign value individually to the element. Make sure to use `storage` location, if you want to make permanent change in the state variable otherwise keep it as `memory` just for viewing or temporary change.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    struct myOrg {
+        string name;
+        uint num_emp;
+    }
+
+    myOrg[] public orgs ;   // state variable
+
+    function set_vals() external {
+        myOrg memory org_1 = myOrg('org1', 1);
+        myOrg memory org_2 = myOrg({name:'org2', num_emp:2});
+        orgs.push(org_1);
+        orgs.push(org_2);
+    }
+    // update the individual element of a struct
+    function update_data(uint ind) external {
+        myOrg storage _org = orgs[ind];
+        _org.name = 'new_Name';
+        _org.num_emp = 2000 ;
+    
+    }
+
+}
+```
 
 # Delete
 
