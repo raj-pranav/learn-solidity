@@ -90,6 +90,8 @@ In this category, data types are passes by reference, which means, whenever an i
 - [x] Struct is user defined datatype that can contain multiple data types
 - [x] It can be defined inside a contract or outside a contract -> struct defined outside the contract can be shared with various other contracts
 
+Learn in detail about [Struct in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/18-struct-in-solidity.md)
+
 ---
 
 ### Mapping
