@@ -98,6 +98,8 @@ Learn in detail about [Struct in Solidity](https://github.com/raj-pranav/learn-s
 - [x] Maps a key-value pair.
 - [x] Analogous to hash tables
 
+Learn more in detail: [Mapping in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/15-Mapping-in-solidity.md)
+
 ---
 
 # Learn Solidity series - for Beginners 👇
