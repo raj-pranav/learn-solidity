@@ -260,7 +260,7 @@ contract struct_sample {
 
     function set_vals() external {
         myOrg memory org_1 = myOrg('org1', 1);  // 1st way
-        myOrg memory org_2 = myOrg({org:'org2', num_emp:2});    // 2nd way
+        myOrg memory org_2 = myOrg({name:'org2', num_emp:2});    // 2nd way
 
         orgs.push(org_1);
         orgs.push(org_2);
