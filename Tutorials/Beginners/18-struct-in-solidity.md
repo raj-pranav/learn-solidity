@@ -11,20 +11,98 @@
 > DRAFT
 
 # Purpose of Struct
+Struct allows to group data of various [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) together. Struct can be very usefull to represent an entity/objects which need various parameters (or properties) of same or different data type. Here's what I mean,
+
+To represent a Company, you migth need few parameters such as name, sector, pincode, turnover etc.. You can create a struct for company which can accomodate all these different parameters, otherwise without struct each variable has to be declared individually and there is no logical group that would hold these variables together.
 
 # Declaring a struct
+A struct can be declared as follows, in solidity
 
-## Single struct
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
 
-## Array of structs
+contract struct_sample {
+
+    // Syntax
+    struct any_name {
+        data-type var1;
+        data-type var2;
+    }
+
+    //example
+    struct myOrg {
+        string name;
+        uint num_emp;
+    }
+}
+```
+
+`Note : ` A struct can be decalred inside as well as outside a contract. A struct declared outside the contract can be accessed by various contract from outside and the struct declared within a contract can be accessed by same contract or the contract which inherit from it.
+
+After declaring the struct, you can use it as state varible for the single instance as well as multiple instance (as array). Let's see both of them in the two respectibe section below.
+
+## Single instance of a struct - as state variable
+
+Declaring a single instance of myOrg as org.
+
+```solidity
+// within the contract
+  // syntax
+  struct_name public name_for_this_instance ;
+  
+  // example
+  myOrg public org ;
+
+```
+Image for illustration purpose: single struct
+
+![one_struct](https://user-images.githubusercontent.com/48473708/153768867-10cd14bd-66be-4e5e-9f8b-384cb52db2d5.png)
+
+
+## Instance as Array of structs - as state variable
+
+Declaring many instance of myOrg as array.
+
+```solidity
+// within the contract
+  // syntax
+  struct_name [] public name_for_this_instance ;
+  
+  // example
+  myOrg[] public orgs ;
+
+```
+
+Image for illustration purpose: multiple struct (array of struc)
+![array_struct](https://user-images.githubusercontent.com/48473708/153769017-316825fd-e2d5-4eec-a276-db2be312539e.png)
+
 
 # Initializing struct elements
+Elements of a struct can be initialized in three different ways, which are described below 
 
 ## Default initialize
+A default initialization means initializing a struct member to its default value according to their data type. 
+
+To your surprise, I have the struct is automatically initialized when declared as state variable, in the above code.
+
+Look at the initialization line,
+```solidity
+myOrg public org ;
+```
+All the member of the struct `org` has been assigned with the default value
+- name : ''   // empty string
+- num_emp = 0 // 0
+
+`sidenote: ` when you delete a struct, each member of the struct will be set to its default value as per their data type.
+
+
 
 ## As per element's order
 
+
 ## Using key-value pair
+
 
 # Accessing struct element
 
