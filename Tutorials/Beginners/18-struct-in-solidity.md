@@ -81,10 +81,7 @@ Image for illustration purpose: multiple struct (array of struc)
 
 # Initializing/Updating single Struct
 
-## Initializing struct elements - with value
-Elements of a struct can be initialized in four different ways, which are described below 
-
-### Default initialize
+## Default initialize
 A default initialization means initializing a struct member to its default value according to their data type. 
 
 To your surprise, the struct is automatically initialized upon declaring it as state variable, in the above code.
@@ -99,7 +96,7 @@ All the member of the struct `org` has been assigned with the default value
 
 `sidenote: ` when you delete a struct, each member of the struct will be set to its default value as per their data type.
 
-### Initialize value using constructor
+## Initialize value using constructor
 A constructor can also be used to initialize values of the struct member, as shown below
 
 ```solidity
@@ -124,7 +121,7 @@ contract struct_sample {
 
 Before deploying the contract, you have to pass values to the constructor and this can be done done one time only.
 
-### Update individual element with corresponding value
+## Update individual element with corresponding value
 After declaring a struct, you can update the value of each member by passing arguments. To set the value, I have created a function - this function will take input from user and sets the new value to respective member.
 
 ```solidity
@@ -133,7 +130,6 @@ pragma solidity >=0.6.0 <0.9.0;
 
 contract struct_sample {
 
-    //example
     struct myOrg {
         string name;
         uint num_emp;
@@ -148,7 +144,7 @@ contract struct_sample {
 ```
 
 
-### Update elements by passing value in their order
+## Update elements by passing value in order
 You can pass the value as per the member declaration order, as shown in the code below
 
 ```solidity
@@ -157,7 +153,6 @@ pragma solidity >=0.6.0 <0.9.0;
 
 contract struct_sample {
 
-    //example
     struct myOrg {
         string name;
         uint num_emp;
@@ -171,9 +166,80 @@ contract struct_sample {
 ```
 
 
-### Using key-value pair
+## Using key-value pair
+You can also pass the arguments in the form of a key-value pair, where key is the member name and value is any new value. It does not requires parameters to be in the same order as members are declared. This is most preffered way to initialize or update a struct member.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    struct myOrg {
+        string name;
+        uint num_emp;
+    }
+    myOrg public org ;
+
+    function set_val() external {
+        org = myOrg({name :'abc', num_emp:300});    // or myOrg({num_emp:300, name :'pqr'});
+    }
+}
+```
 
 # Initializing/Updating Array of Structs
+Initialization or updation of array of structs works is pretty same way as shown in the last section (Initializing/Updating single Struct). However, ther are more features available because you can use all array methods additionally. Let's get deeper
+
+Refer to the previous declaration of `myOrg[] public orgs ;`
+
+## Initialize and add struct to the array
+
+### Add member argument as per their order
+You can pass member value directly in the struct name (as per the declared member order) and push to to the array. First time execution will insert a new struct a location `0` of the array, second time function execution will add new struct to location `1` and so on..
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    struct myOrg {
+        string name;
+        uint num_emp;
+    }
+
+    myOrg[] public orgs ;   // state variable
+
+    function set_vals(string memory _org, uint _num) external {
+        orgs.push(myOrg(_org, _num));
+    }
+}
+
+```
+
+### Add member argument as key-value pair
+In this method , the order of parameters does not matter.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    struct myOrg {
+        string name;
+        uint num_emp;
+    }
+
+    myOrg[] public orgs ;   // state variable
+
+    function set_vals(string memory _org, uint _num) external {
+        orgs.push(myOrg({name:_org, num_emp:_num}));
+
+        // orgs.push(myOrg({num_emp:_num, name:_org}));
+    }
+}
+```
 
 # Accessing struct element
 
