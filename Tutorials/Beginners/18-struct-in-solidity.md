@@ -241,6 +241,35 @@ contract struct_sample {
 }
 ```
 
+# Creating an In-memory struct and passing it to state variable
+
+You can also creates an in-memory struct (pointing to the structure of struct) and pass this struct from memory to storage location. If you don't push it to the array then in-memory struct will get destroyed after the function call and will does not exists anywhere.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    struct myOrg {
+        string name;
+        uint num_emp;
+    }
+
+    myOrg[] public orgs ;   // state variable
+
+    function set_vals() external {
+        myOrg memory org_1 = myOrg('org1', 1);  // 1st way
+        myOrg memory org_2 = myOrg({org:'org2', num_emp:2});    // 2nd way
+
+        orgs.push(org_1);
+        orgs.push(org_2);
+    }
+}
+
+```
+
+
 # Accessing struct element
 
 ## Replacing/Updating struct element
