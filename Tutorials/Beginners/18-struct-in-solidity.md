@@ -8,7 +8,6 @@
 <br>
 
 
-> DRAFT
 
 # Purpose of Struct
 Struct allows to group data of various [data type](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md) together. Struct can be very usefull to represent an entity/objects which need various parameters (or properties) of same or different data type. Here's what I mean,
