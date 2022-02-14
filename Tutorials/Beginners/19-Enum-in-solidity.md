@@ -10,7 +10,7 @@
 > DRAFT
 
 
-# What does Enum exists in solidity
+# Why does Enum exists in solidity
 
 # Declare an Enum
 
