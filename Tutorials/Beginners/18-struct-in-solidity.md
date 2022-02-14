@@ -335,12 +335,105 @@ contract struct_sample {
 ```
 
 # Delete
+Delete function just resets the value of specific member or even the whole struct. It does not removes them from struct. The member will still be present after the delete operation but with it's deafult value (also described earlier).
 
-## Delete one element of struct
+## Delete one element of a struct
+Code to demonstrate the deletion (resetting) of one of the struct member.
 
-## Delete one struct from array
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
 
-## Delete entire struct
+contract struct_sample {
+
+    struct myOrg{
+        string name;
+        uint num_emp;
+    }
+
+        myOrg[] public orgs;    // state variable
+
+        // adding data to struct and pushing it to array
+        function add_data() external {
+            orgs.push(myOrg({name:'org1', num_emp : 10}));
+            orgs.push(myOrg({name:'org2', num_emp : 20}));
+        }
+
+        // delete data
+        function remove_data() external {
+            myOrg storage org = orgs[0];
+            
+            // reset one element of a struct located at specific address in the array
+            delete org.name;
+        }
+
+}
+```
+
+## Delete one complete struct from array
+Delete operation will resets the complete struct, after the operation all the memeber of that struct will have its default value.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    struct myOrg{
+        string name;
+        uint num_emp;
+    }
+
+        myOrg[] public orgs;    // state variable
+
+        // adding data to struct and pushing it to array
+        function add_data() external {
+            orgs.push(myOrg({name:'org1', num_emp : 10}));
+            orgs.push(myOrg({name:'org2', num_emp : 20}));
+        }
+
+        // delete data
+        function remove_data() external {
+                        
+            // reset one complete struct located at specific address in the array
+            delete orgs[1];
+        }
+}
+```
+
+## Delete all of the struct from a array
+
+Delete can also able to reset all the structs from a given array of struct. 
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract struct_sample {
+
+    struct myOrg{
+        string name;
+        uint num_emp;
+    }
+
+        myOrg[] public orgs;    // state variable
+
+        // adding data to struct and pushing it to array
+        function add_data() external {
+            orgs.push(myOrg({name:'org1', num_emp : 10}));
+            orgs.push(myOrg({name:'org2', num_emp : 20}));
+        }
+
+        // delete data
+        function remove_data() external {
+                        
+            // reset all of struct from the array
+            delete orgs;
+        }
+
+}
+```
+
 
 
 ---
