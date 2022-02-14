@@ -10,6 +10,24 @@
 > DRAFT
 
 
+# What does Enum exists in solidity
+
+# Declare an Enum
+
+# Use Enum
+
+## As input to the function
+
+## As output from the function
+
+## Select a custom enum from the availabe options
+
+# Delete enum (reset)
+
+
+# Enum within a struct
+
+
 ---
 
 # Find all the codes written in this section
