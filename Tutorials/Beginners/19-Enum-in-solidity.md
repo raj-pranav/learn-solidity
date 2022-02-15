@@ -153,7 +153,30 @@ contract PaymentData {
 ```
 
 # Delete enum (reset)
+Delete kryword will reset the enum to its default value and the default value is the first value position (which is `0`).
 
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract PaymentData {
+    enum paymodes {
+        None,
+        Cash,
+        Crypto,
+        Online,
+        Cheque
+    }
+
+    paymodes constant defaultmode = paymodes.None;
+    paymodes public paymode ;
+
+
+    function reset_paymode() external {
+        delete paymode ;
+    }
+}
+```
 
 # Enum within a struct
 
