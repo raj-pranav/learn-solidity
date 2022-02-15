@@ -11,6 +11,15 @@
 
 
 # Why does Enum exists in solidity
+Enum is a way to group together several options under one name. User can write program to select one of the options from the enum name.<br>
+
+For example, Boolean type provide us with two option - true or false | But what if, we want more than two option - here comes the role of a enum. <br>
+
+- Enum must have atleast one member at the time of declaration
+- The default value of the enumm is the first member
+- Enums cannot have more than `256` members
+
+Now, Let's get started and learn to declare & use enum in solidity.
 
 # Declare an Enum
 
