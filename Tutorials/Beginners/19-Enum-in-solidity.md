@@ -16,20 +16,141 @@ Enum is a way to group together several options under one name. User can write p
 For example, Boolean type provide us with two option - true or false | But what if, we want more than two option - here comes the role of a enum. <br>
 
 - Enum must have `atleast one member` at the time of declaration
-- The `default value` of the enumm is the `first member`
+- The `default value` of the enum is the `first member`
 - Enums cannot have more than `256` members
+- Each option is represented by subsequent unsigned integer value (start from 0)
+- enum types are not part of the ABI
 
 Now, Let's get started and learn to declare & use enum in solidity.
 
 # Declare an Enum
+enum can be declared using keyword enum followed by a name and then inside the curly bracket all options.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract PaymentData {
+// syntax
+    enum name_for_enum { option1, option 2 .... option 256}
+    
+// example
+    enum paymodes {
+        None,
+        Cash,
+        Crypto,
+        Online,
+        Cheque
+    }
+    
+}
+```
 
 # Use Enum
 
-## As input to the function
+## Set a defaultoption from the available one
+You can set a defualt option from the enum by declaring a constant name and then assign the choice.
 
-## As output from the function
+`Note :` As stated earlier, when you try to return any option, instead of the option name you will get the corresponding position (index) starting with 0. In the example below, since the default option is selected as None, therfore you would get `0` in return. For other value let say `online` - you would get 3 as output.
 
-## Select a custom enum from the availabe options
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract PaymentData {
+    enum paymodes {
+        None,
+        Cash,
+        Crypto,
+        Online,
+        Cheque
+    }
+
+    paymodes constant defaultmode = paymodes.None;
+    paymodes public paymode ;
+
+}
+```
+
+## Enum as input to the function
+A function can accepts the enum type as input as well, but instead of the textual name it takes position as the input, which means you can pass 0 or 1 or 2 and so on instead of None, Cash, Crypto etc..
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract PaymentData {
+    enum paymodes {
+        None,
+        Cash,
+        Crypto,
+        Online,
+        Cheque
+    }
+
+    paymodes constant defaultmode = paymodes.None;
+    paymodes public paymode ;
+
+    function set_mode(paymodes _mode) external {
+        paymode = _mode ;
+    }
+}
+```
+
+## Enum as output from the function
+A function can also provide you enum as output. The return value will be in numeric (uint)
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract PaymentData {
+    enum paymodes {
+        None,
+        Cash,
+        Crypto,
+        Online,
+        Cheque
+    }
+
+    paymodes constant defaultmode = paymodes.None;
+    paymodes public paymode ;
+
+    function set_mode(paymodes _mode) external {
+        paymode = _mode ;
+    }
+
+    function get_mode() external view returns (paymodes){
+        return paymode ;
+    }
+}
+```
+
+## Assign a custom enum to state variable
+You can also choose to push a custom value to the state variable.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract PaymentData {
+    enum paymodes {
+        None,
+        Cash,
+        Crypto,
+        Online,
+        Cheque
+    }
+
+    paymodes constant defaultmode = paymodes.None;
+    paymodes public paymode ;
+
+
+    function get_specific() external {
+        paymode = paymodes.Online ;
+    }
+}
+```
 
 # Delete enum (reset)
 
