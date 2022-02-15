@@ -180,6 +180,7 @@ contract PaymentData {
 
 # Enum within a struct
 
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0 <0.9.0;
 
@@ -206,7 +207,7 @@ contract PaymentData {
         C.client = msg.sender;
     }
 }
-
+```
 
 ---
 
