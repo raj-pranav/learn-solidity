@@ -180,13 +180,40 @@ contract PaymentData {
 
 # Enum within a struct
 
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
+
+contract PaymentData {
+    enum paymodes {
+        None,
+        Cash,
+        Crypto,
+        Online,
+        Cheque
+    }
+
+    paymodes public paymode ;
+
+    struct Client {
+        address client;
+        paymodes paymode;
+    }
+
+    Client public C ;
+
+    function client_pay(paymodes _mode) external {
+        C.paymode = _mode ;
+        C.client = msg.sender;
+    }
+}
+
 
 ---
 
 # Find all the codes written in this section
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
-[Github Gist - Enum in Solidity]()  |-->   [`Try in Remix`](https://remix.ethereum.org/)
+[Github Gist - Enum in Solidity](https://gist.github.com/raj-pranav/a739092a854febb9bf81bccf0ca7ddd2)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
 ---
 
