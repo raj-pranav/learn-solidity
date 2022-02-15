@@ -7,7 +7,6 @@
 <br>
 <br>
 
-> DRAFT
 
 
 # Why does Enum exists in solidity
