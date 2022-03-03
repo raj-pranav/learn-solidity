@@ -54,8 +54,26 @@ contract Consttr {
 }
 ```
 
+## Use constructor of inherited contract in current contract
+You can directly use the `constructor of inherited contract` in your current contract to initialize the required variable(s). You can pass the parameter (if neccessary) in the current contract to be consumed by the inherited one, OR directly pass the parameter(s) to the contructor name. Here's what I mean,
 
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0 <0.9.0;
 
+import "@OpenZeppelin/openzeppelin-contracts/token/ERC721/ERC721.sol"   
+
+contract Consttr is ERC721 {    // <- inherits from ERC721
+  uint p ;    // state variable 
+  address owner ;
+  
+  constructor () {
+    ERC721("myNFT","eNFT")  // directly using inherited contract's constructor
+  }
+  
+}
+
+```
 
 ---
 
@@ -63,6 +81,7 @@ contract Consttr {
 All codes are compiler ready - It can directly be compiled without any errors and deployable further
 
 [Github Gist - constructor in Solidity](https://gist.github.com/raj-pranav/ea33caf9855a49906de0d79859045e66)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
+
 
 ---
 
