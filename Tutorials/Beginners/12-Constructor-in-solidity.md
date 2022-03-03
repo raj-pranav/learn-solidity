@@ -67,9 +67,7 @@ contract Consttr is ERC721 {    // <- inherits from ERC721
   uint p ;    // state variable 
   address owner ;
   
-  constructor () {
-    ERC721("myNFT","eNFT")  // directly using inherited contract's constructor
-  }
+  constructor () ERC721("myNFT","eNFT") {} // directly using inherited contract's constructor
   
 }
 
