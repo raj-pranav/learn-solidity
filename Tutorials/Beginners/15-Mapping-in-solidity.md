@@ -44,7 +44,7 @@ mapping (address => uint) balances ;
 
 
 # Mapping examples
-In the example given below, there exists a mapping with a name `Eth_users` which <b>maps<b> address to <b>uint<b>. Here address can be any arbitrary ethereum address and uint for storing amount. The first function `add_amnt` takes in two parameters, an address and amount to be added and it marked as external function with no return type. This [Function](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/10-Functions-in-solidity.md) adds the given amount to the given address.<br>
+In the example given below, there exists a mapping with a name `Eth_users` which maps <b>address</b> to <b>uint</b>. Here address can be any arbitrary ethereum address and uint for storing amount. The first function `add_amnt` takes in two parameters, an address and amount to be added and it marked as external function with no return type. This [Function](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/10-Functions-in-solidity.md) adds the given amount to the given address.<br>
 
 The second function `fetch_amnt` deals with fetching the amount available at a particular given address. This function only requires an address and it fetches the amount and returns it back.
 
