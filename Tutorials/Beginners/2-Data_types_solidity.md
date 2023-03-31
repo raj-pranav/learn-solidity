@@ -8,12 +8,21 @@
 # Data Types in Solidity
 **Solidity** is `statically typed` language, which means data type of any/all variables has to be define during the declaration time itself. If not defined, the compiler throws an error. Based on the data type defined, the compiler reserves a memory for that variable. Data type in popularly called as `value type` in solidity. Every [state variable](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/3-State_variable_solidity.md) or local variable in solidity have to declared with a specific data types.
 
-Data type in solidity is broadly categorized in two types, based on how they are accessed
-- Value Type `call by value`
-- Reference type `call by reference`
+[Boolean](https://github.com/raj-pranav/learn-solidity/edit/main/Tutorials/Beginners/2-Data_types_solidity.md#boolean-bool---contains-two-types-of-value)
 
-## Value Type - call by value
-In this category, data types are passes by value, which means, whenever an instance of the variable is called/initialized the data value gets copied to that instance.
+[Integer](https://github.com/raj-pranav/learn-solidity/edit/main/Tutorials/Beginners/2-Data_types_solidity.md#integers-intuint-1)
+
+[String](https://github.com/raj-pranav/learn-solidity/edit/main/Tutorials/Beginners/2-Data_types_solidity.md#string-1)
+
+[Address](https://github.com/raj-pranav/learn-solidity/edit/main/Tutorials/Beginners/2-Data_types_solidity.md#address-a-20-byte-value---for-ethereum)
+
+[Byte](https://github.com/raj-pranav/learn-solidity/edit/main/Tutorials/Beginners/2-Data_types_solidity.md#byte-array-static)
+
+[Array](https://github.com/raj-pranav/learn-solidity/edit/main/Tutorials/Beginners/2-Data_types_solidity.md#arrays-indices-starts-with-zero)
+
+[Struct](https://github.com/raj-pranav/learn-solidity/edit/main/Tutorials/Beginners/2-Data_types_solidity.md#struct-1)
+
+[Mapping](https://github.com/raj-pranav/learn-solidity/edit/main/Tutorials/Beginners/2-Data_types_solidity.md#mapping-1)
 
 ### Boolean (bool) - contains two types of value
 - [x] true
@@ -75,8 +84,6 @@ Associated member: `length` - returns the length of byte array
 
 ---
 
-## Reference type - call by reference
-In this category, data types are passes by reference, which means, whenever an instance of the variable is called/initialized the data value get referenced to the original value; to that instance. The data is accessed using a location/index.
 
 ### Arrays (indices starts with zero)
 - [x] Fixed size array (size has to be decided during the declaration)
@@ -97,6 +104,19 @@ Learn in detail about [Struct in Solidity](https://github.com/raj-pranav/learn-s
 ### Mapping
 - [x] Maps a key-value pair.
 - [x] Analogous to hash tables
+
+
+Data type in solidity is broadly categorized in two types, based on how they are accessed
+- Value Type `call by value`
+- Reference type `call by reference`
+
+
+## Value Type - call by value
+In this category, data types are passes by value, which means, whenever an instance of the variable is called/initialized the data value gets copied to that instance.
+
+## Reference type - call by reference
+In this category, data types are passes by reference, which means, whenever an instance of the variable is called/initialized the data value get referenced to the original value; to that instance. The data is accessed using a location/index.
+
 
 Learn more in detail: [Mapping in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/15-Mapping-in-solidity.md)
 
