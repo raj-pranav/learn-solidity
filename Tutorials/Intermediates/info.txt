@@ -1,1 +1,7 @@
-Tutorials coming up soon
+Planned topics
+1. Events in Solidity (bring from Beginner section)
+2. Storage, Memory and Call data (bring again)
+3. Visibility Specifiers
+4. Constructor
+5. ABI and Byte code
+6. 
