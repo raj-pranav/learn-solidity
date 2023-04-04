@@ -33,6 +33,20 @@ This space is a beginners friendly and you can expect resources for intermediate
 
 ---
 
+
+<div class="row">
+  <div class="column">
+    <img src="https://user-images.githubusercontent.com/48473708/229770044-491678a6-371f-4d46-9490-c2d5d34f5069.png" alt="Solidity Beginner" width="200">
+  </div>
+  <div class="column">
+    <img src="image2.jpg" alt="Image 2">
+  </div>
+  <div class="column">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+</div>
+
+
 # Learn Solidity (complete)
 
 [For Beginners 👉](/Tutorials/Beginners/solidity-beginners-TC.md)
