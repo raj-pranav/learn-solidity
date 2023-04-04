@@ -35,9 +35,8 @@ This space is a beginners friendly and you can expect resources for intermediate
 
 # Learn Solidity (complete)
 
-[For Beginners](/Tutorials/Beginners/solidity-beginners-TC.md)
+[For Beginners 👉](/Tutorials/Beginners/solidity-beginners-TC.md)
 
-### For Beginners 👇
 1. [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/1-What_is_Solidity.md)
 2. [Data Types in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md)
 3. [Variables in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2.1-Variables_in_solidity.md)
