@@ -1,5 +1,4 @@
-# Learn Solidity
-### For Beginners 👇
+# Learn Solidity - for Beginners 👇
 
 * [What is Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/1-What_is_Solidity.md)
 * [Data Types in Solidity](https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/2-Data_types_solidity.md)
