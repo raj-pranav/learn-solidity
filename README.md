@@ -35,8 +35,10 @@ This space is a beginners friendly and you can expect resources for intermediate
 
 # Learn Solidity (complete)
 
-<p float="left"> 
-  <img src="/Tutorials/Beginners/images-for-docs/beginner.png" width="200" onclick="window.location.href='https://github.com/raj-pranav/learn-solidity/blob/main/Tutorials/Beginners/solidity-beginners-TC.md'" />
+<p float="left">
+  <a href="/Tutorials/Beginners/solidity-beginners-TC.md" >
+    <img src="/Tutorials/Beginners/images-for-docs/beginner.png" width="200" />
+  </a>
   <img src="/Tutorials/Beginners/images-for-docs/intermediate.png" width="200" />
   <img src="/Tutorials/Beginners/images-for-docs/advance.png" width="200" /> 
 </p>
