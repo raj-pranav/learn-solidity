@@ -19,25 +19,11 @@ This space is a beginners friendly and you can expect resources for intermediate
 
 <br>
 
----
-
-`CONTRIBUTORS` are always welcome !!
-
----
-
-
-## Shareable code in Gist
-[<img alt="GitHub Gist" src="https://img.shields.io/badge/Github-Gist-Black?style=social&logo=GitHub">](https://gist.github.com/raj-pranav)
-
-[GitHub Gist - Learn Solidity](https://gist.github.com/raj-pranav)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
-
----
-
 # Learn Solidity (complete)
 
 <p float="left">
   <a href="/Tutorials/Beginners/solidity-beginners-TC.md" >
-    <img src="/Tutorials/Beginners/images-for-docs/beginner.png" width="200" />
+    <img src="/Tutorials/Beginners/images-for-docs/beginner.png" width="200" padding-right: 20px />
   </a>
   <a href="/Tutorials/Intermediates/solidity-Intermediate-TC.md" >
     <img src="/Tutorials/Beginners/images-for-docs/intermediate.png" width="200" />
@@ -47,15 +33,15 @@ This space is a beginners friendly and you can expect resources for intermediate
   </a>
 </p>
 
-[For Beginners 👉](/Tutorials/Beginners/solidity-beginners-TC.md)
 
+## Shareable code in Gist
+[<img alt="GitHub Gist" src="https://img.shields.io/badge/Github-Gist-Black?style=social&logo=GitHub">](https://gist.github.com/raj-pranav)
 
-### For Intermediate professionals 👇
+[GitHub Gist - Learn Solidity](https://gist.github.com/raj-pranav)  |-->   [`Try in Remix`](https://remix.ethereum.org/)
 
+---
 
-
-
-<br>
+`CONTRIBUTORS` are always welcome !!
 
 ---
 
