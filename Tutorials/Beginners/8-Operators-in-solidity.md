@@ -191,6 +191,7 @@ Taking our original declared variable,
 bool res4 = x == y; // res4 = false
 
 ```
+**String comparison** is not possible in Solidity !!
 
 ## Not equal to (inequality) : `!=`
 It compare both operands and return true if both the NOT equal, false otherwise
